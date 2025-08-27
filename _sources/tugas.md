@@ -1,0 +1,2 @@
+# Pengantar Pencarian & Penambangan Web
+Web Mining atau Penambangan Web adalah proses menemukan serta mengekstrak informasi dari internet menggunakan teknik penambangan data. Informasi yang diperoleh dapat dimanfaatkan untuk pengambilan keputusan yang lebih efektif.
