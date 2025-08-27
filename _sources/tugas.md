@@ -58,3 +58,13 @@ Kategori ketiga dari Web Mining adalah Web Usage Mining. Model ini merupakan tek
 ## Deployment System
 Deployment adalah proses penerapan atau penempatan suatu aplikasi, sistem, solusi, atau teknologi ke dalam lingkungan operasional yang sesungguhnya setelah melalui tahap pengembangan (development). Proses deployment melibatkan penempatan aplikasi atau sistem ke dalam lingkungan produksi atau operasional yang biasanya berbeda dari lingkungan pengembangan atau pengujian.
 Tujuan deployment secara keseluruhan, tujuan utama dari deployment adalah membuat aplikasi atau sistem tersedia untuk pengguna akhir (end-user) sehingga mereka dapat memanfaatkannya sesuai dengan kebutuhan. 
+
+
+
+## Referensi 
+https://www.jagoanhosting.com/blog/web-crawling-adalah/
+https://www.researchgate.net/publication/2378016_Web_Mining_Research_A_Survey
+https://sis.binus.ac.id/2021/08/04/apa-itu-web-mining/
+https://sis.binus.ac.id/2021/10/13/langkah-langkah-utama-data-preprocessing/
+https://sis.binus.ac.id/2024/10/24/supervised-vs-unsupervised-learning/
+https://www.dicoding.com/blog/deployment-pengertian-tujuan-dan-jenis-jenisnya/
