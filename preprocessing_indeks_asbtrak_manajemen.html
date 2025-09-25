@@ -384,13 +384,13 @@ document.write(`
 <h1><strong>CRAWLING, PREPROCESSING, DAN INDEKS</strong><a class="headerlink" href="#crawling-preprocessing-dan-indeks" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -----------------------------------------</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -----------------------------------------</span>
 <span class="c1"># Crawling abstracts from PTA Trunojoyo (Manajemen)</span>
 <span class="c1"># Copy-paste ke Google Colab dan jalankan</span>
 <span class="c1"># -----------------------------------------</span>
 
 <span class="c1"># (1) install dependencies (jalankan sekali jika perlu)</span>
-<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>-q<span class="w"> </span>beautifulsoup4<span class="w"> </span>requests<span class="w"> </span>pandas<span class="w"> </span>lxml<span class="w"> </span>tqdm<span class="w"> </span>openpyxl
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="n">beautifulsoup4</span> <span class="n">requests</span> <span class="n">pandas</span> <span class="n">lxml</span> <span class="n">tqdm</span> <span class="n">openpyxl</span>
 
 <span class="c1"># (2) imports</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
@@ -522,72 +522,287 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">25.1.1</span> -&gt; <span class=" -Color -Color-Green">25.2</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">python3 -m pip install --upgrade pip</span>
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mengumpulkan link detail dari listing Manajemen...
+Halaman 1: ditemukan 5 link, ditambahkan 5 link baru. Total link: 5
+Halaman 2: ditemukan 5 link, ditambahkan 5 link baru. Total link: 10
+Halaman 3: ditemukan 5 link, ditambahkan 5 link baru. Total link: 15
+Halaman 4: ditemukan 5 link, ditambahkan 5 link baru. Total link: 20
+Halaman 5: ditemukan 5 link, ditambahkan 5 link baru. Total link: 25
+Halaman 6: ditemukan 5 link, ditambahkan 5 link baru. Total link: 30
+Halaman 7: ditemukan 5 link, ditambahkan 5 link baru. Total link: 35
+Halaman 8: ditemukan 5 link, ditambahkan 5 link baru. Total link: 40
+Halaman 9: ditemukan 5 link, ditambahkan 5 link baru. Total link: 45
+Halaman 10: ditemukan 5 link, ditambahkan 5 link baru. Total link: 50
+Halaman 11: ditemukan 5 link, ditambahkan 5 link baru. Total link: 55
+Halaman 12: ditemukan 5 link, ditambahkan 5 link baru. Total link: 60
+Halaman 13: ditemukan 5 link, ditambahkan 5 link baru. Total link: 65
+Halaman 14: ditemukan 5 link, ditambahkan 5 link baru. Total link: 70
+Halaman 15: ditemukan 5 link, ditambahkan 5 link baru. Total link: 75
+Halaman 16: ditemukan 5 link, ditambahkan 5 link baru. Total link: 80
+Halaman 17: ditemukan 5 link, ditambahkan 5 link baru. Total link: 85
+Halaman 18: ditemukan 5 link, ditambahkan 5 link baru. Total link: 90
+Halaman 19: ditemukan 5 link, ditambahkan 5 link baru. Total link: 95
+Halaman 20: ditemukan 5 link, ditambahkan 5 link baru. Total link: 100
+Halaman 21: ditemukan 5 link, ditambahkan 5 link baru. Total link: 105
+Halaman 22: ditemukan 5 link, ditambahkan 5 link baru. Total link: 110
+Halaman 23: ditemukan 5 link, ditambahkan 5 link baru. Total link: 115
+Halaman 24: ditemukan 5 link, ditambahkan 5 link baru. Total link: 120
+Halaman 25: ditemukan 5 link, ditambahkan 5 link baru. Total link: 125
+Halaman 26: ditemukan 5 link, ditambahkan 5 link baru. Total link: 130
+Halaman 27: ditemukan 5 link, ditambahkan 5 link baru. Total link: 135
+Halaman 28: ditemukan 5 link, ditambahkan 5 link baru. Total link: 140
+Halaman 29: ditemukan 5 link, ditambahkan 5 link baru. Total link: 145
+Halaman 30: ditemukan 5 link, ditambahkan 5 link baru. Total link: 150
+Halaman 31: ditemukan 5 link, ditambahkan 5 link baru. Total link: 155
+Halaman 32: ditemukan 5 link, ditambahkan 5 link baru. Total link: 160
+Halaman 33: ditemukan 5 link, ditambahkan 5 link baru. Total link: 165
+Halaman 34: ditemukan 5 link, ditambahkan 5 link baru. Total link: 170
+Halaman 35: ditemukan 5 link, ditambahkan 5 link baru. Total link: 175
+Halaman 36: ditemukan 5 link, ditambahkan 5 link baru. Total link: 180
+Halaman 37: ditemukan 5 link, ditambahkan 5 link baru. Total link: 185
+Halaman 38: ditemukan 5 link, ditambahkan 5 link baru. Total link: 190
+Halaman 39: ditemukan 5 link, ditambahkan 5 link baru. Total link: 195
+Halaman 40: ditemukan 5 link, ditambahkan 5 link baru. Total link: 200
+Halaman 41: ditemukan 5 link, ditambahkan 5 link baru. Total link: 205
+Halaman 42: ditemukan 5 link, ditambahkan 5 link baru. Total link: 210
+Halaman 43: ditemukan 5 link, ditambahkan 5 link baru. Total link: 215
+Halaman 44: ditemukan 5 link, ditambahkan 5 link baru. Total link: 220
+Halaman 45: ditemukan 5 link, ditambahkan 5 link baru. Total link: 225
+Halaman 46: ditemukan 5 link, ditambahkan 5 link baru. Total link: 230
+Halaman 47: ditemukan 5 link, ditambahkan 5 link baru. Total link: 235
+Halaman 48: ditemukan 5 link, ditambahkan 5 link baru. Total link: 240
+Halaman 49: ditemukan 5 link, ditambahkan 5 link baru. Total link: 245
+Halaman 50: ditemukan 5 link, ditambahkan 5 link baru. Total link: 250
+Halaman 51: ditemukan 5 link, ditambahkan 5 link baru. Total link: 255
+Halaman 52: ditemukan 5 link, ditambahkan 5 link baru. Total link: 260
+Halaman 53: ditemukan 5 link, ditambahkan 5 link baru. Total link: 265
+Halaman 54: ditemukan 5 link, ditambahkan 5 link baru. Total link: 270
+Halaman 55: ditemukan 5 link, ditambahkan 5 link baru. Total link: 275
+Halaman 56: ditemukan 5 link, ditambahkan 5 link baru. Total link: 280
+Halaman 57: ditemukan 5 link, ditambahkan 5 link baru. Total link: 285
+Halaman 58: ditemukan 5 link, ditambahkan 5 link baru. Total link: 290
+Halaman 59: ditemukan 5 link, ditambahkan 5 link baru. Total link: 295
+Halaman 60: ditemukan 5 link, ditambahkan 5 link baru. Total link: 300
+Halaman 61: ditemukan 5 link, ditambahkan 5 link baru. Total link: 305
+Halaman 62: ditemukan 5 link, ditambahkan 5 link baru. Total link: 310
+Halaman 63: ditemukan 5 link, ditambahkan 5 link baru. Total link: 315
+Halaman 64: ditemukan 5 link, ditambahkan 5 link baru. Total link: 320
+Halaman 65: ditemukan 5 link, ditambahkan 5 link baru. Total link: 325
+Halaman 66: ditemukan 5 link, ditambahkan 5 link baru. Total link: 330
+Halaman 67: ditemukan 5 link, ditambahkan 5 link baru. Total link: 335
+Halaman 68: ditemukan 5 link, ditambahkan 5 link baru. Total link: 340
+Halaman 69: ditemukan 5 link, ditambahkan 5 link baru. Total link: 345
+Halaman 70: ditemukan 5 link, ditambahkan 5 link baru. Total link: 350
+Halaman 71: ditemukan 5 link, ditambahkan 5 link baru. Total link: 355
+Halaman 72: ditemukan 5 link, ditambahkan 5 link baru. Total link: 360
+Halaman 73: ditemukan 5 link, ditambahkan 5 link baru. Total link: 365
+Halaman 74: ditemukan 5 link, ditambahkan 5 link baru. Total link: 370
+Halaman 75: ditemukan 5 link, ditambahkan 5 link baru. Total link: 375
+Halaman 76: ditemukan 5 link, ditambahkan 5 link baru. Total link: 380
+Halaman 77: ditemukan 5 link, ditambahkan 5 link baru. Total link: 385
+Halaman 78: ditemukan 5 link, ditambahkan 5 link baru. Total link: 390
+Halaman 79: ditemukan 5 link, ditambahkan 5 link baru. Total link: 395
+Halaman 80: ditemukan 5 link, ditambahkan 5 link baru. Total link: 400
+Halaman 81: ditemukan 5 link, ditambahkan 5 link baru. Total link: 405
+Halaman 82: ditemukan 5 link, ditambahkan 5 link baru. Total link: 410
+Halaman 83: ditemukan 5 link, ditambahkan 5 link baru. Total link: 415
+Halaman 84: ditemukan 5 link, ditambahkan 5 link baru. Total link: 420
+Halaman 85: ditemukan 5 link, ditambahkan 5 link baru. Total link: 425
+Halaman 86: ditemukan 5 link, ditambahkan 5 link baru. Total link: 430
+Halaman 87: ditemukan 5 link, ditambahkan 5 link baru. Total link: 435
+Halaman 88: ditemukan 5 link, ditambahkan 5 link baru. Total link: 440
+Halaman 89: ditemukan 5 link, ditambahkan 5 link baru. Total link: 445
+Halaman 90: ditemukan 5 link, ditambahkan 5 link baru. Total link: 450
+Halaman 91: ditemukan 5 link, ditambahkan 5 link baru. Total link: 455
+Halaman 92: ditemukan 5 link, ditambahkan 5 link baru. Total link: 460
+Halaman 93: ditemukan 5 link, ditambahkan 5 link baru. Total link: 465
+Halaman 94: ditemukan 5 link, ditambahkan 5 link baru. Total link: 470
+Halaman 95: ditemukan 5 link, ditambahkan 5 link baru. Total link: 475
+Halaman 96: ditemukan 5 link, ditambahkan 5 link baru. Total link: 480
+Halaman 97: ditemukan 5 link, ditambahkan 5 link baru. Total link: 485
+Halaman 98: ditemukan 5 link, ditambahkan 5 link baru. Total link: 490
+Halaman 99: ditemukan 5 link, ditambahkan 5 link baru. Total link: 495
+Halaman 100: ditemukan 5 link, ditambahkan 5 link baru. Total link: 500
+Halaman 101: ditemukan 5 link, ditambahkan 5 link baru. Total link: 505
+Halaman 102: ditemukan 5 link, ditambahkan 5 link baru. Total link: 510
+Halaman 103: ditemukan 5 link, ditambahkan 5 link baru. Total link: 515
+Halaman 104: ditemukan 5 link, ditambahkan 5 link baru. Total link: 520
+Halaman 105: ditemukan 5 link, ditambahkan 5 link baru. Total link: 525
+Halaman 106: ditemukan 5 link, ditambahkan 5 link baru. Total link: 530
+Halaman 107: ditemukan 5 link, ditambahkan 5 link baru. Total link: 535
+Halaman 108: ditemukan 5 link, ditambahkan 5 link baru. Total link: 540
+Halaman 109: ditemukan 5 link, ditambahkan 5 link baru. Total link: 545
+Halaman 110: ditemukan 5 link, ditambahkan 5 link baru. Total link: 550
+Halaman 111: ditemukan 5 link, ditambahkan 5 link baru. Total link: 555
+Halaman 112: ditemukan 5 link, ditambahkan 5 link baru. Total link: 560
+Halaman 113: ditemukan 5 link, ditambahkan 5 link baru. Total link: 565
+Halaman 114: ditemukan 5 link, ditambahkan 5 link baru. Total link: 570
+Halaman 115: ditemukan 5 link, ditambahkan 5 link baru. Total link: 575
+Halaman 116: ditemukan 5 link, ditambahkan 5 link baru. Total link: 580
+Halaman 117: ditemukan 5 link, ditambahkan 5 link baru. Total link: 585
+Halaman 118: ditemukan 5 link, ditambahkan 5 link baru. Total link: 590
+Halaman 119: ditemukan 5 link, ditambahkan 5 link baru. Total link: 595
+Halaman 120: ditemukan 5 link, ditambahkan 5 link baru. Total link: 600
+Halaman 121: ditemukan 5 link, ditambahkan 5 link baru. Total link: 605
+Halaman 122: ditemukan 5 link, ditambahkan 5 link baru. Total link: 610
+Halaman 123: ditemukan 5 link, ditambahkan 5 link baru. Total link: 615
+Halaman 124: ditemukan 5 link, ditambahkan 5 link baru. Total link: 620
+Halaman 125: ditemukan 5 link, ditambahkan 5 link baru. Total link: 625
+Halaman 126: ditemukan 5 link, ditambahkan 5 link baru. Total link: 630
+Halaman 127: ditemukan 5 link, ditambahkan 5 link baru. Total link: 635
+Halaman 128: ditemukan 5 link, ditambahkan 5 link baru. Total link: 640
+Halaman 129: ditemukan 5 link, ditambahkan 5 link baru. Total link: 645
+Halaman 130: ditemukan 5 link, ditambahkan 5 link baru. Total link: 650
+Halaman 131: ditemukan 5 link, ditambahkan 5 link baru. Total link: 655
+Halaman 132: ditemukan 5 link, ditambahkan 5 link baru. Total link: 660
+Halaman 133: ditemukan 5 link, ditambahkan 5 link baru. Total link: 665
+Halaman 134: ditemukan 5 link, ditambahkan 5 link baru. Total link: 670
+Halaman 135: ditemukan 5 link, ditambahkan 5 link baru. Total link: 675
+Halaman 136: ditemukan 5 link, ditambahkan 5 link baru. Total link: 680
+Halaman 137: ditemukan 5 link, ditambahkan 5 link baru. Total link: 685
+Halaman 138: ditemukan 5 link, ditambahkan 5 link baru. Total link: 690
+Halaman 139: ditemukan 5 link, ditambahkan 5 link baru. Total link: 695
+Halaman 140: ditemukan 5 link, ditambahkan 5 link baru. Total link: 700
+Halaman 141: ditemukan 5 link, ditambahkan 5 link baru. Total link: 705
+Halaman 142: ditemukan 5 link, ditambahkan 5 link baru. Total link: 710
+Halaman 143: ditemukan 5 link, ditambahkan 5 link baru. Total link: 715
+Halaman 144: ditemukan 5 link, ditambahkan 5 link baru. Total link: 720
+Halaman 145: ditemukan 5 link, ditambahkan 5 link baru. Total link: 725
+Halaman 146: ditemukan 5 link, ditambahkan 5 link baru. Total link: 730
+Halaman 147: ditemukan 5 link, ditambahkan 5 link baru. Total link: 735
+Halaman 148: ditemukan 5 link, ditambahkan 5 link baru. Total link: 740
+Halaman 149: ditemukan 5 link, ditambahkan 5 link baru. Total link: 745
+Halaman 150: ditemukan 5 link, ditambahkan 5 link baru. Total link: 750
+Halaman 151: ditemukan 5 link, ditambahkan 5 link baru. Total link: 755
+Halaman 152: ditemukan 5 link, ditambahkan 5 link baru. Total link: 760
+Halaman 153: ditemukan 5 link, ditambahkan 5 link baru. Total link: 765
+Halaman 154: ditemukan 5 link, ditambahkan 5 link baru. Total link: 770
+Halaman 155: ditemukan 5 link, ditambahkan 5 link baru. Total link: 775
+Halaman 156: ditemukan 5 link, ditambahkan 5 link baru. Total link: 780
+Halaman 157: ditemukan 5 link, ditambahkan 5 link baru. Total link: 785
+Halaman 158: ditemukan 5 link, ditambahkan 5 link baru. Total link: 790
+Halaman 159: ditemukan 5 link, ditambahkan 5 link baru. Total link: 795
+Halaman 160: ditemukan 5 link, ditambahkan 5 link baru. Total link: 800
+Halaman 161: ditemukan 5 link, ditambahkan 5 link baru. Total link: 805
+Halaman 162: ditemukan 5 link, ditambahkan 5 link baru. Total link: 810
+Halaman 163: ditemukan 5 link, ditambahkan 5 link baru. Total link: 815
+Halaman 164: ditemukan 5 link, ditambahkan 5 link baru. Total link: 820
+Halaman 165: ditemukan 5 link, ditambahkan 5 link baru. Total link: 825
+Halaman 166: ditemukan 5 link, ditambahkan 5 link baru. Total link: 830
+Halaman 167: ditemukan 5 link, ditambahkan 5 link baru. Total link: 835
+Halaman 168: ditemukan 5 link, ditambahkan 5 link baru. Total link: 840
+Halaman 169: ditemukan 5 link, ditambahkan 5 link baru. Total link: 845
+Halaman 170: ditemukan 5 link, ditambahkan 5 link baru. Total link: 850
+Halaman 171: ditemukan 5 link, ditambahkan 5 link baru. Total link: 855
+Halaman 172: ditemukan 5 link, ditambahkan 5 link baru. Total link: 860
+Halaman 173: ditemukan 5 link, ditambahkan 5 link baru. Total link: 865
+Halaman 174: ditemukan 5 link, ditambahkan 5 link baru. Total link: 870
+Halaman 175: ditemukan 5 link, ditambahkan 5 link baru. Total link: 875
+Halaman 176: ditemukan 5 link, ditambahkan 5 link baru. Total link: 880
+Halaman 177: ditemukan 5 link, ditambahkan 5 link baru. Total link: 885
+Halaman 178: ditemukan 5 link, ditambahkan 5 link baru. Total link: 890
+Halaman 179: ditemukan 5 link, ditambahkan 5 link baru. Total link: 895
+Halaman 180: ditemukan 5 link, ditambahkan 5 link baru. Total link: 900
+Halaman 181: ditemukan 5 link, ditambahkan 5 link baru. Total link: 905
+Halaman 182: ditemukan 5 link, ditambahkan 5 link baru. Total link: 910
+Halaman 183: ditemukan 5 link, ditambahkan 5 link baru. Total link: 915
+Halaman 184: ditemukan 5 link, ditambahkan 5 link baru. Total link: 920
+Halaman 185: ditemukan 5 link, ditambahkan 5 link baru. Total link: 925
+Halaman 186: ditemukan 5 link, ditambahkan 5 link baru. Total link: 930
+Halaman 187: ditemukan 5 link, ditambahkan 5 link baru. Total link: 935
+Halaman 188: ditemukan 5 link, ditambahkan 5 link baru. Total link: 940
+Halaman 189: ditemukan 5 link, ditambahkan 5 link baru. Total link: 945
+Halaman 190: ditemukan 5 link, ditambahkan 5 link baru. Total link: 950
+Halaman 191: ditemukan 5 link, ditambahkan 5 link baru. Total link: 955
+Halaman 192: ditemukan 5 link, ditambahkan 5 link baru. Total link: 960
+Halaman 193: ditemukan 5 link, ditambahkan 5 link baru. Total link: 965
+Halaman 194: ditemukan 5 link, ditambahkan 5 link baru. Total link: 970
+Halaman 195: ditemukan 5 link, ditambahkan 5 link baru. Total link: 975
+Halaman 196: ditemukan 5 link, ditambahkan 5 link baru. Total link: 980
+Halaman 197: ditemukan 5 link, ditambahkan 5 link baru. Total link: 985
+Halaman 198: ditemukan 5 link, ditambahkan 5 link baru. Total link: 990
+Halaman 199: ditemukan 5 link, ditambahkan 5 link baru. Total link: 995
+Halaman 200: ditemukan 5 link, ditambahkan 5 link baru. Total link: 1000
+Selesai mengumpulkan. Total detail URLs: 1000
+Mengunduh dan mengekstrak tiap detail...
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 1: ditemukan 5 link, ditambahkan 5 link baru. Total link: 5
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 1000/1000 [40:33&lt;00:00,  2.43s/it]
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 2: ditemukan 5 link, ditambahkan 5 link baru. Total link: 10
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 3: ditemukan 5 link, ditambahkan 5 link baru. Total link: 15
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 4: ditemukan 5 link, ditambahkan 5 link baru. Total link: 20
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 5: ditemukan 5 link, ditambahkan 5 link baru. Total link: 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 6: ditemukan 5 link, ditambahkan 5 link baru. Total link: 30
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 7: ditemukan 5 link, ditambahkan 5 link baru. Total link: 35
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 8: ditemukan 5 link, ditambahkan 5 link baru. Total link: 40
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 9: ditemukan 5 link, ditambahkan 5 link baru. Total link: 45
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 10: ditemukan 5 link, ditambahkan 5 link baru. Total link: 50
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 11: ditemukan 5 link, ditambahkan 5 link baru. Total link: 55
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Halaman 12: ditemukan 5 link, ditambahkan 5 link baru. Total link: 60
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">106</span>
-<span class="g g-Whitespace">    </span><span class="mi">103</span>         <span class="n">detail_urls</span> <span class="o">=</span> <span class="n">detail_urls</span><span class="p">[:</span><span class="n">MAX_DOCS</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">104</span>         <span class="k">break</span>
-<span class="ne">--&gt; </span><span class="mi">106</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">SLEEP_MIN</span><span class="p">,</span> <span class="n">SLEEP_MAX</span><span class="p">))</span>
-<span class="g g-Whitespace">    </span><span class="mi">108</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Selesai mengumpulkan. Total detail URLs: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">detail_urls</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">110</span> <span class="c1"># (7) ambil isi dari tiap detail page (ekstraksi abstrak)</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil disimpan: /content/pta_manajemen_abstracts.csv  dan  /content/pta_manajemen_abstracts.xlsx
+id                                                            0  \
+title         PENGARUH FAKTOR-FAKTOR PELATIHAN DAN PENGEMBAN...   
+author                                                  SATIYAH   
+abstract_ind  si\n\n\n\n\n                                  ...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/080...   
 
-<span class="ne">KeyboardInterrupt</span>: 
+id                                                            1  \
+title         ANALISIS PERSEPSI BRAND ASSOCIATION MENURUT PE...   
+author                                                  Faishal   
+abstract_ind  si\n\n\n\n\nTujuan penelitian ini adalah untuk...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/090...   
+
+id                                                            2  \
+title         PENGARUH GAYA KEPEMIMPINAN DEMOKRATIK TERHADAP...   
+author                                          Wahyu Kurniawan   
+abstract_ind                                                 si   
+url           https://pta.trunojoyo.ac.id/welcome/detail/080...   
+
+id                                                            3  \
+title         Pengukuran Website Quality Pada Situs Sistem A...   
+author                                   Muhammad Zakaria Utomo   
+abstract_ind  si\n\n\n\n\nAplikasi nyata pemanfaatan teknolo...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/100...   
+
+id                                                            4  \
+title         PENGARUH KEPEMIMPINAN DAN KOMPENSASI TERHADAP ...   
+author                                  Hendri Wahyudi Prayitno   
+abstract_ind  si\n\n\n\n\nAbstrak\r\nPenelitian ini mengguna...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/080...   
+
+id                                                            5  \
+title         PENGARUH KOMPETENSI DOSEN TERHADAP KINERJA DOS...   
+author                                               Aththaariq   
+abstract_ind  si\n\n\n\n\nAbstrak\r\n\r\nAththaariq, Pengaru...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/080...   
+
+id                                                            6  \
+title         PENGARUH PERILAKU KONSUMEN TERHADAP KEPUTUSAN ...   
+author                                           Haryono Arifin   
+abstract_ind  si\n\n\n\n\nABSTRAK\r\nHaryono Arifin, Pengaru...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/080...   
+
+id                                                            7  \
+title         PENGARUH TIPE KEPEMIMPINAN TERHADAP PRESTASI K...   
+author                                       Dharma Abidin Syah   
+abstract_ind  si\n\n\n\n\nABSTRAK\r\n\tDharma Abidin Syah,Ke...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/080...   
+
+id                                                            8  \
+title         PENGARUH DIMENSI KUALITAS PELAYANAN TERHADAP K...   
+author                                            Toni Budianto   
+abstract_ind  si\n\n\n\n\nABSTRAK\r\n\r\nTujuan penelitian i...   
+url           https://pta.trunojoyo.ac.id/welcome/detail/090...   
+
+id                                                            9  
+title                            ANALISIS TINGKAT RISIKO KREDIT  
+author                                     Iwan Kurniawan Gomes  
+abstract_ind  si\n\n\n\n\nHasil dari penelitian ini dari per...  
+url           https://pta.trunojoyo.ac.id/welcome/detail/090...  
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -----------------------------------------</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -----------------------------------------</span>
 <span class="c1"># Preprocessing Abstrak PTA Trunojoyo (Prodi Manajemen)</span>
 <span class="c1"># -----------------------------------------</span>
 
 <span class="c1"># 1. Install &amp; update library</span>
-<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>nltk<span class="w"> </span>textblob
-<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>-q<span class="w"> </span>Sastrawi<span class="w"> </span>pandas<span class="w"> </span>openpyxl<span class="w"> </span>pyspellchecker
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">nltk</span> <span class="n">textblob</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="n">Sastrawi</span> <span class="n">pandas</span> <span class="n">openpyxl</span> <span class="n">pyspellchecker</span>
 
 <span class="c1"># 2. Import dan download resource NLTK</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
@@ -710,7 +925,7 @@ Top 20 kata paling sering muncul:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tampilkan 5 dokumen pertama beserta token hasil preprocessing</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tampilkan 5 dokumen pertama beserta token hasil preprocessing</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;title&quot;</span><span class="p">,</span> <span class="s2">&quot;tokens&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -735,7 +950,7 @@ Top 20 kata paling sering muncul:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Abstrak pertama sebelum dan sesudah preprocessing</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Abstrak pertama sebelum dan sesudah preprocessing</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Abstrak asli:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;abstract_ind&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Hasil preprocessing (tokens):</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
@@ -762,7 +977,7 @@ Hasil preprocessing (tokens):
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simpan hasil preprocessing (abstrak asli + tokens) ke file</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simpan hasil preprocessing (abstrak asli + tokens) ke file</span>
 <span class="n">prep_csv</span> <span class="o">=</span> <span class="s2">&quot;/content/preprocessing_result.csv&quot;</span>
 <span class="n">prep_xlsx</span> <span class="o">=</span> <span class="s2">&quot;/content/preprocessing_result.xlsx&quot;</span>
 
