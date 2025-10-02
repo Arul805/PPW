@@ -1,0 +1,1967 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CLEANS ABSTRAK PRODI MANAJEMEN &#8212; PPW</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tf_idf_&_word_embedding';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/profil.jpg" class="logo__image only-light" alt="PPW - Home"/>
+    <script>document.write(`<img src="_static/profil.jpg" class="logo__image only-dark" alt="PPW - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Profile
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tugas.html">Pengantar Pencarian &amp; Penambangan Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawling_PPW.html">Crawling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawling_ptadanberita.html">Crawling PTA , Berita, dan Link</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing_indeks_asbtrak_manajemen.html"><strong>CRAWLING, PREPROCESSING, DAN INDEKS</strong></a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftf_idf_&_word_embedding.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/tf_idf_&_word_embedding.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>CLEANS ABSTRAK PRODI MANAJEMEN</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">CLEANS ABSTRAK PRODI MANAJEMEN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding">WORD EMBEDDING</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#berita-cleans">BERITA CLEANS</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="cleans-abstrak-prodi-manajemen">
+<h1>CLEANS ABSTRAK PRODI MANAJEMEN<a class="headerlink" href="#cleans-abstrak-prodi-manajemen" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">plotly</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">gensim</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: plotly in /usr/local/lib/python3.12/dist-packages (5.24.1)
+Requirement already satisfied: tenacity&gt;=6.2.0 in /usr/local/lib/python3.12/dist-packages (from plotly) (8.5.0)
+Requirement already satisfied: packaging in /usr/local/lib/python3.12/dist-packages (from plotly) (25.0)
+Requirement already satisfied: gensim in /usr/local/lib/python3.12/dist-packages (4.3.3)
+Requirement already satisfied: numpy&lt;2.0,&gt;=1.18.5 in /usr/local/lib/python3.12/dist-packages (from gensim) (1.26.4)
+Requirement already satisfied: scipy&lt;1.14.0,&gt;=1.7.0 in /usr/local/lib/python3.12/dist-packages (from gensim) (1.13.1)
+Requirement already satisfied: smart-open&gt;=1.8.1 in /usr/local/lib/python3.12/dist-packages (from gensim) (7.3.1)
+Requirement already satisfied: wrapt in /usr/local/lib/python3.12/dist-packages (from smart-open&gt;=1.8.1-&gt;gensim) (1.17.3)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">gensim.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Word2Vec</span><span class="p">,</span> <span class="n">FastText</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.feature_extraction.text</span><span class="w"> </span><span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+
+<span class="c1"># Load file CSV kamu</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;/content/preprocessing_result.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cek 5 data pertama</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   id                                              title  \
+0   0  PENGARUH FAKTOR-FAKTOR PELATIHAN DAN PENGEMBAN...   
+1   1  ANALISIS PERSEPSI BRAND ASSOCIATION MENURUT PE...   
+2   2  PENGARUH GAYA KEPEMIMPINAN DEMOKRATIK TERHADAP...   
+3   3  Pengukuran Website Quality Pada Situs Sistem A...   
+4   4  PENGARUH KEPEMIMPINAN DAN KOMPENSASI TERHADAP ...   
+
+                    author                                       abstract_ind  \
+0                  SATIYAH  si\n\n\n\n\n                                  ...   
+1                  Faishal  si\n\n\n\n\nTujuan penelitian ini adalah untuk...   
+2          Wahyu Kurniawan                                                 si   
+3   Muhammad Zakaria Utomo  si\n\n\n\n\nAplikasi nyata pemanfaatan teknolo...   
+4  Hendri Wahyudi Prayitno  si\n\n\n\n\nAbstrak\r\nPenelitian ini mengguna...   
+
+                                                 url  \
+0  https://pta.trunojoyo.ac.id/welcome/detail/080...   
+1  https://pta.trunojoyo.ac.id/welcome/detail/090...   
+2  https://pta.trunojoyo.ac.id/welcome/detail/080...   
+3  https://pta.trunojoyo.ac.id/welcome/detail/100...   
+4  https://pta.trunojoyo.ac.id/welcome/detail/080...   
+
+                                              tokens  
+0  [&#39;abstrak&#39;, &#39;satiyah&#39;, &#39;pengaruh&#39;, &#39;faktor&#39;, &#39;...  
+1  [&#39;tuju&#39;, &#39;teliti&#39;, &#39;persepsi&#39;, &#39;brand&#39;, &#39;assoc...  
+2                                                 []  
+3  [&#39;aplikasi&#39;, &#39;nyata&#39;, &#39;manfaat&#39;, &#39;teknologi&#39;, ...  
+4  [&#39;abstrak&#39;, &#39;teliti&#39;, &#39;metode&#39;, &#39;kuantitatif&#39;,...  
+</pre></div>
+</div>
+</div>
+</div>
+<section id="tf-idf">
+<h2>TF-IDF<a class="headerlink" href="#tf-idf" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.feature_extraction.text</span><span class="w"> </span><span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+
+<span class="c1"># Load file hasil preprocessing</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;/content/preprocessing_result.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Ubah kolom tokens dari string ke list lalu gabungkan jadi string</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_list&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">eval</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_list&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="c1"># Buat TF-IDF</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+<span class="n">X_tfidf</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_str&quot;</span><span class="p">])</span>
+
+<span class="c1"># Ubah jadi DataFrame biar rapi</span>
+<span class="n">tfidf_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">X_tfidf</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span>
+    <span class="n">columns</span><span class="o">=</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="c1"># Tambahkan ID dokumen biar jelas</span>
+<span class="n">tfidf_df</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;doc_id&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">])</span>
+
+<span class="c1"># Info shape</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TF-IDF shape:&quot;</span><span class="p">,</span> <span class="n">X_tfidf</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># Tampilkan 5 baris pertama</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tfidf_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TF-IDF shape: (1000, 5632)
+   doc_id  aaa  aaaamanahsyariah  aar  abadi  abai  abalisis  abc  abcs  abd  \
+0       0  0.0               0.0  0.0    0.0   0.0       0.0  0.0   0.0  0.0   
+1       1  0.0               0.0  0.0    0.0   0.0       0.0  0.0   0.0  0.0   
+2       2  0.0               0.0  0.0    0.0   0.0       0.0  0.0   0.0  0.0   
+3       3  0.0               0.0  0.0    0.0   0.0       0.0  0.0   0.0  0.0   
+4       4  0.0               0.0  0.0    0.0   0.0       0.0  0.0   0.0  0.0   
+
+   ...  zscore  zte  zuhri  zuhruf  zulfi  zulia  zuliana  zulkifli  zulpah  \
+0  ...     0.0  0.0    0.0     0.0    0.0    0.0      0.0       0.0     0.0   
+1  ...     0.0  0.0    0.0     0.0    0.0    0.0      0.0       0.0     0.0   
+2  ...     0.0  0.0    0.0     0.0    0.0    0.0      0.0       0.0     0.0   
+3  ...     0.0  0.0    0.0     0.0    0.0    0.0      0.0       0.0     0.0   
+4  ...     0.0  0.0    0.0     0.0    0.0    0.0      0.0       0.0     0.0   
+
+   zyn  
+0  0.0  
+1  0.0  
+2  0.0  
+3  0.0  
+4  0.0  
+
+[5 rows x 5633 columns]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="word-embedding">
+<h2>WORD EMBEDDING<a class="headerlink" href="#word-embedding" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">gensim.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Word2Vec</span>
+
+<span class="c1"># Convert tokens jadi list of list</span>
+<span class="n">token_lists</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">eval</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># Train Word2Vec</span>
+<span class="n">w2v_model</span> <span class="o">=</span> <span class="n">Word2Vec</span><span class="p">(</span><span class="n">sentences</span><span class="o">=</span><span class="n">token_lists</span><span class="p">,</span> <span class="n">vector_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># Representasi dokumen = rata-rata vektor kata di abstrak</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">doc_vector</span><span class="p">(</span><span class="n">tokens</span><span class="p">):</span>
+    <span class="n">vecs</span> <span class="o">=</span> <span class="p">[</span><span class="n">w2v_model</span><span class="o">.</span><span class="n">wv</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokens</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">w2v_model</span><span class="o">.</span><span class="n">wv</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">vecs</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">vecs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">w2v_model</span><span class="o">.</span><span class="n">vector_size</span><span class="p">)</span>
+
+<span class="n">X_w2v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">doc_vector</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">token_lists</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape Word2Vec:&quot;</span><span class="p">,</span> <span class="n">X_w2v</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shape Word2Vec: (1000, 100)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import library</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">gensim.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Word2Vec</span>
+
+<span class="c1"># Load hasil preprocessing</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;/content/preprocessing_result.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Kolom &quot;tokens&quot; isinya list dalam bentuk string, ubah ke list beneran</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_list&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">eval</span><span class="p">)</span>
+
+<span class="c1"># Buat corpus (list of list of tokens)</span>
+<span class="n">corpus</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_list&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># Tampilkan contoh corpus pertama</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contoh corpus dokumen 0:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">corpus</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Latih Word2Vec</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">Word2Vec</span><span class="p">(</span>
+    <span class="n">sentences</span><span class="o">=</span><span class="n">corpus</span><span class="p">,</span>
+    <span class="n">vector_size</span><span class="o">=</span><span class="mi">56</span><span class="p">,</span>   <span class="c1"># bisa diganti sesuai kebutuhan</span>
+    <span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">sg</span><span class="o">=</span><span class="mi">1</span>              <span class="c1"># 1 = skip-gram, 0 = CBOW</span>
+<span class="p">)</span>
+
+<span class="c1"># ==== Eksplorasi Embeddings ====</span>
+
+<span class="c1"># Function to safely get most similar words</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">safe_most_similar</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kata mirip dengan &#39;</span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">&#39;:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span><span class="n">topn</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kata &#39;</span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">&#39; not found in vocabulary.&quot;</span><span class="p">)</span>
+
+<span class="c1"># kata mirip dengan &quot;penelitian&quot;</span>
+<span class="n">safe_most_similar</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s1">&#39;penelitian&#39;</span><span class="p">)</span>
+
+<span class="c1"># kata mirip dengan &quot;data&quot;</span>
+<span class="n">safe_most_similar</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">)</span>
+
+<span class="c1"># cosmul example - check if all positive and negative words are in vocab</span>
+<span class="n">positive_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;penelitian&#39;</span><span class="p">,</span> <span class="s1">&#39;sistem&#39;</span><span class="p">]</span>
+<span class="n">negative_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+<span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">word</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">wv</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">positive_words</span> <span class="o">+</span> <span class="n">negative_words</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cosmul (</span><span class="si">{</span><span class="s1">&#39; + &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">positive_words</span><span class="p">)</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="s1">&#39; + &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">negative_words</span><span class="p">)</span><span class="si">}</span><span class="s2">):&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar_cosmul</span><span class="p">(</span>
+        <span class="n">positive</span><span class="o">=</span><span class="n">positive_words</span><span class="p">,</span>
+        <span class="n">negative</span><span class="o">=</span><span class="n">negative_words</span><span class="p">,</span>
+        <span class="n">topn</span><span class="o">=</span><span class="mi">5</span>
+    <span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">missing_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">positive_words</span> <span class="o">+</span> <span class="n">negative_words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cannot perform Cosmul. Missing words in vocabulary: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing_words</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># doesnt_match</span>
+<span class="n">match_words</span> <span class="o">=</span> <span class="s2">&quot;penelitian data sistem informasi&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">word</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">wv</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">match_words</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kata yang tidak cocok dalam </span><span class="si">{</span><span class="n">match_words</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">doesnt_match</span><span class="p">(</span><span class="n">match_words</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+     <span class="n">missing_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">match_words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="p">]</span>
+     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cannot perform doesnt_match. Missing words in vocabulary: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing_words</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ==== Save Embeddings ====</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;pta_embeddings.txt&quot;</span>
+<span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">save_word2vec_format</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">binary</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Embeddings disimpan ke </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Contoh corpus dokumen 0:
+ [&#39;abstrak&#39;, &#39;satiyah&#39;, &#39;pengaruh&#39;, &#39;faktor&#39;, &#39;faktor&#39;, &#39;latih&#39;, &#39;kembang&#39;, &#39;produktivitas&#39;, &#39;kerja&#39;, &#39;dinas&#39;, &#39;laut&#39;, &#39;ikan&#39;, &#39;bangkal&#39;, &#39;bawah&#39;, &#39;bimbing&#39;, &#39;dra&#39;, &#39;anugrahini&#39;, &#39;irawati&#39;, &#39;helm&#39;, &#39;buyung&#39;, &#39;aulia&#39;, &#39;upaya&#39;, &#39;tingkat&#39;, &#39;produktivitas&#39;, &#39;kerja&#39;, &#39;mudah&#39;, &#39;salah&#39;, &#39;usaha&#39;, &#39;produktivitas&#39;, &#39;tingkat&#39;, &#39;terap&#39;, &#39;program&#39;, &#39;latih&#39;, &#39;kembang&#39;, &#39;sumber&#39;, &#39;daya&#39;, &#39;manusia&#39;, &#39;sdm&#39;, &#39;laksana&#39;, &#39;instansi&#39;, &#39;produktivitas&#39;, &#39;capai&#39;, &#39;tingkat&#39;, &#39;mampu&#39;, &#39;pegawai&#39;, &#39;efektif&#39;, &#39;efisien&#39;, &#39;latih&#39;, &#39;pengembnagan&#39;, &#39;harap&#39;, &#39;pegawai&#39;, &#39;sesuai&#39;, &#39;butuh&#39;, &#39;butuh&#39;, &#39;sikap&#39;, &#39;tingkah&#39;, &#39;laku&#39;, &#39;terampil&#39;, &#39;tahu&#39;, &#39;sesuai&#39;, &#39;tuntut&#39;, &#39;ubah&#39;, &#39;latih&#39;, &#39;kembang&#39;, &#39;pegawai&#39;, &#39;dukung&#39;, &#39;cipta&#39;, &#39;suasana&#39;, &#39;kerja&#39;, &#39;kondusif&#39;, &#39;instansi&#39;, &#39;produktivitas&#39;, &#39;kerja&#39;, &#39;tingkat&#39;, &#39;tuju&#39;, &#39;teliti&#39;, &#39;pengaruh&#39;, &#39;faktor&#39;, &#39;faktor&#39;, &#39;latih&#39;, &#39;kembang&#39;, &#39;produktivitas&#39;, &#39;kerja&#39;, &#39;dinas&#39;, &#39;laut&#39;, &#39;ikan&#39;, &#39;bangkal&#39;, &#39;ukur&#39;, &#39;menganalisa&#39;, &#39;hubung&#39;, &#39;variabel&#39;, &#39;teliti&#39;, &#39;dekat&#39;, &#39;observasional&#39;, &#39;analitik&#39;, &#39;amat&#39;, &#39;langsung&#39;, &#39;responden&#39;, &#39;sebar&#39;, &#39;kuisioner&#39;, &#39;analis&#39;, &#39;teliti&#39;, &#39;teliti&#39;, &#39;populasi&#39;, &#39;responden&#39;, &#39;sampel&#39;, &#39;olah&#39;, &#39;spss&#39;, &#39;versi&#39;, &#39;analis&#39;, &#39;metode&#39;, &#39;statistik&#39;, &#39;metode&#39;, &#39;non&#39;, &#39;probality&#39;, &#39;sampling&#39;, &#39;simple&#39;, &#39;random&#39;, &#39;sampling&#39;, &#39;simpul&#39;, &#39;teliti&#39;, &#39;faktor&#39;, &#39;faktor&#39;, &#39;latih&#39;, &#39;kembang&#39;, &#39;beda&#39;, &#39;individu&#39;, &#39;pegawai&#39;, &#39;hubung&#39;, &#39;analisis&#39;, &#39;jabat&#39;, &#39;motivasi&#39;, &#39;partisipasi&#39;, &#39;aktif&#39;, &#39;seleksi&#39;, &#39;serta&#39;, &#39;seleksi&#39;, &#39;instruktur&#39;, &#39;metode&#39;, &#39;latih&#39;, &#39;kembang&#39;, &#39;pengaruh&#39;, &#39;simultan&#39;, &#39;produktivitas&#39;, &#39;kerja&#39;, &#39;pegawai&#39;, &#39;dinas&#39;, &#39;laut&#39;, &#39;ikan&#39;, &#39;kabupaten&#39;, &#39;bangkal&#39;, &#39;bukti&#39;, &#39;nilai&#39;, &#39;koefisien&#39;, &#39;determinasi&#39;, &#39;ganda&#39;, &#39;square&#39;, &#39;fhitung&#39;, &#39;ftabel&#39;, &#39;faktor&#39;, &#39;hubung&#39;, &#39;analisis&#39;, &#39;jabat&#39;, &#39;pengaruh&#39;, &#39;parsial&#39;, &#39;produktivitas&#39;, &#39;kerja&#39;, &#39;pegawai&#39;, &#39;dinas&#39;, &#39;laut&#39;, &#39;ikan&#39;, &#39;kabupaten&#39;, &#39;bangkal&#39;, &#39;uji&#39;, &#39;hipotesis&#39;, &#39;variabel&#39;, &#39;motivasi&#39;, &#39;bukti&#39;, &#39;nilai&#39;, &#39;thitung&#39;, &#39;seleksi&#39;, &#39;serta&#39;, &#39;pengaruh&#39;, &#39;dominan&#39;, &#39;produktivitas&#39;, &#39;kerja&#39;, &#39;pegawai&#39;, &#39;instansi&#39;, &#39;dinas&#39;, &#39;laut&#39;, &#39;ikan&#39;, &#39;bangkal&#39;]
+
+Kata &#39;penelitian&#39; not found in vocabulary.
+
+Kata mirip dengan &#39;data&#39;:
+[(&#39;peneltian&#39;, 0.8992183208465576), (&#39;primer&#39;, 0.8984580039978027), (&#39;sekunder&#39;, 0.8820010423660278), (&#39;gun&#39;, 0.8817909359931946), (&#39;mengunakan&#39;, 0.8799914121627808)]
+
+Cannot perform Cosmul. Missing words in vocabulary: penelitian
+
+Cannot perform doesnt_match. Missing words in vocabulary: penelitian
+
+Embeddings disimpan ke pta_embeddings.txt
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyTokenizer</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">fit_transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">texts</span><span class="p">):</span>
+        <span class="c1"># Tokenisasi sederhana: lowercase + split</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">texts</span><span class="p">]</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MeanEmbeddingVectorizer</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word2vec_model</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">word2vec</span> <span class="o">=</span> <span class="n">word2vec_model</span>
+        <span class="c1"># Perbaikan: gunakan vector_size (Gensim ≥ 4.0)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dim</span> <span class="o">=</span> <span class="n">word2vec_model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">vector_size</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="n">X_tokenized</span> <span class="o">=</span> <span class="n">MyTokenizer</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">embeddings</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">X_tokenized</span><span class="p">:</span>
+            <span class="c1"># Ambil vektor hanya untuk kata yang ada di vocab</span>
+            <span class="n">valid_vectors</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">word2vec</span><span class="o">.</span><span class="n">wv</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span>
+                <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">word2vec</span><span class="o">.</span><span class="n">wv</span>
+            <span class="p">]</span>
+            <span class="k">if</span> <span class="n">valid_vectors</span><span class="p">:</span>
+                <span class="n">embeddings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">valid_vectors</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">embeddings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dim</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">fit_transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1000, 7)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mean_embedding_vectorizer</span> <span class="o">=</span> <span class="n">MeanEmbeddingVectorizer</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+<span class="n">mean_embedded</span> <span class="o">=</span> <span class="n">mean_embedding_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;tokens_list&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;array&#39;</span><span class="p">]</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">mean_embedded</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-5ab20336-3355-4cb9-88a5-ecfdf751aded" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>title</th>
+      <th>author</th>
+      <th>abstract_ind</th>
+      <th>url</th>
+      <th>tokens</th>
+      <th>tokens_list</th>
+      <th>array</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>PENGARUH FAKTOR-FAKTOR PELATIHAN DAN PENGEMBAN...</td>
+      <td>SATIYAH</td>
+      <td>si\n\n\n\n\n                                  ...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+      <td>['abstrak', 'satiyah', 'pengaruh', 'faktor', '...</td>
+      <td>[abstrak, satiyah, pengaruh, faktor, faktor, l...</td>
+      <td>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>ANALISIS PERSEPSI BRAND ASSOCIATION MENURUT PE...</td>
+      <td>Faishal</td>
+      <td>si\n\n\n\n\nTujuan penelitian ini adalah untuk...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/090...</td>
+      <td>['tuju', 'teliti', 'persepsi', 'brand', 'assoc...</td>
+      <td>[tuju, teliti, persepsi, brand, association, l...</td>
+      <td>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>PENGARUH GAYA KEPEMIMPINAN DEMOKRATIK TERHADAP...</td>
+      <td>Wahyu Kurniawan</td>
+      <td>si</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+      <td>[]</td>
+      <td>[]</td>
+      <td>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>Pengukuran Website Quality Pada Situs Sistem A...</td>
+      <td>Muhammad Zakaria Utomo</td>
+      <td>si\n\n\n\n\nAplikasi nyata pemanfaatan teknolo...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/100...</td>
+      <td>['aplikasi', 'nyata', 'manfaat', 'teknologi', ...</td>
+      <td>[aplikasi, nyata, manfaat, teknologi, informas...</td>
+      <td>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>PENGARUH KEPEMIMPINAN DAN KOMPENSASI TERHADAP ...</td>
+      <td>Hendri Wahyudi Prayitno</td>
+      <td>si\n\n\n\n\nAbstrak\r\nPenelitian ini mengguna...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+      <td>['abstrak', 'teliti', 'metode', 'kuantitatif',...</td>
+      <td>[abstrak, teliti, metode, kuantitatif, tekan, ...</td>
+      <td>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5ab20336-3355-4cb9-88a5-ecfdf751aded')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-5ab20336-3355-4cb9-88a5-ecfdf751aded button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-5ab20336-3355-4cb9-88a5-ecfdf751aded');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-bc773582-a014-4343-b96a-2f67154b6548">
+      <button class="colab-df-quickchart" onclick="quickchart('df-bc773582-a014-4343-b96a-2f67154b6548')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-bc773582-a014-4343-b96a-2f67154b6548 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;embedding_length&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;array&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">len</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;embedding_length&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      56
+1      56
+2      56
+3      56
+4      56
+       ..
+995    56
+996    56
+997    56
+998    56
+999    56
+Name: embedding_length, Length: 1000, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1000, 9)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">gensim.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Word2Vec</span>
+
+<span class="c1"># 1. Load dataset</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;preprocessing_result.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># 2. Pastikan kolom tokens ada (string daftar kata)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># 3. Bikin corpus untuk Word2Vec</span>
+<span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_str&quot;</span><span class="p">]]</span>
+
+<span class="c1"># 4. Latih Word2Vec</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">Word2Vec</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> <span class="n">vector_size</span><span class="o">=</span><span class="mi">56</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># 5. MeanEmbeddingVectorizer</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyTokenizer</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">fit_transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">texts</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">texts</span><span class="p">]</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MeanEmbeddingVectorizer</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word2vec_model</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">word2vec</span> <span class="o">=</span> <span class="n">word2vec_model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dim</span> <span class="o">=</span> <span class="n">word2vec_model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">vector_size</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="n">X_tokenized</span> <span class="o">=</span> <span class="n">MyTokenizer</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">embeddings</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">X_tokenized</span><span class="p">:</span>
+            <span class="n">valid_vectors</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">word2vec</span><span class="o">.</span><span class="n">wv</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">w</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">word2vec</span><span class="o">.</span><span class="n">wv</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">valid_vectors</span><span class="p">:</span>
+                <span class="n">embeddings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">valid_vectors</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">embeddings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dim</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span>
+
+<span class="c1"># 6. Transform teks jadi embedding</span>
+<span class="n">texts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tokens_str&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">MeanEmbeddingVectorizer</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+<span class="n">X_embed</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape embeddings:&quot;</span><span class="p">,</span> <span class="n">X_embed</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contoh dokumen pertama:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">X_embed</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># 7. Simpan ke DataFrame</span>
+<span class="n">num_features</span> <span class="o">=</span> <span class="n">X_embed</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;f</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_features</span><span class="p">)]</span>
+<span class="n">embedding_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_embed</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="c1"># Gabung metadata</span>
+<span class="n">final_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;title&quot;</span><span class="p">,</span><span class="s2">&quot;author&quot;</span><span class="p">,</span><span class="s2">&quot;url&quot;</span><span class="p">]],</span> <span class="n">embedding_df</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 8. Save ke CSV</span>
+<span class="n">final_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;word_embeddings_features.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Hasil embeddings disimpan ke &#39;word_embeddings_features.csv&#39;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shape embeddings: (1000, 56)
+Contoh dokumen pertama:
+ [ 0.41714409 -0.04168329 -0.31555137  0.44645479  0.50892955 -0.68637031
+ -0.00145381 -0.55331463 -0.75308633 -0.21033765 -0.42613235  0.35601047
+ -0.84386533 -0.54033089  0.33936727  0.52722842  0.12394693  0.17974444
+ -0.02824138 -0.43485069  0.68457896 -0.01475596  0.63503301 -0.66723561
+  0.29311672 -0.32292941  1.12548912  0.02216942  0.4895356  -0.22547728
+ -0.11266289  0.50150508 -0.02858619  0.7652728  -0.51093131 -0.3075712
+  0.34432188  0.10526028 -0.38155389  0.54580456 -0.80889434  0.04751804
+  0.75979298  0.00217088  0.46299919 -0.24621116  0.00330278  0.25611392
+  0.16526414  0.44888785 -1.06781316  0.28689393 -0.25207508  0.31879416
+ -0.26872405 -0.5188995 ]
+
+Hasil embeddings disimpan ke &#39;word_embeddings_features.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lihat 5 baris pertama</span>
+<span class="n">embedding_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="c1"># Lihat ukuran DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape:&quot;</span><span class="p">,</span> <span class="n">embedding_df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># Lihat ringkasan tiap kolom</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">embedding_df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shape: (1000, 56)
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 56 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   f1      1000 non-null   float64
+ 1   f2      1000 non-null   float64
+ 2   f3      1000 non-null   float64
+ 3   f4      1000 non-null   float64
+ 4   f5      1000 non-null   float64
+ 5   f6      1000 non-null   float64
+ 6   f7      1000 non-null   float64
+ 7   f8      1000 non-null   float64
+ 8   f9      1000 non-null   float64
+ 9   f10     1000 non-null   float64
+ 10  f11     1000 non-null   float64
+ 11  f12     1000 non-null   float64
+ 12  f13     1000 non-null   float64
+ 13  f14     1000 non-null   float64
+ 14  f15     1000 non-null   float64
+ 15  f16     1000 non-null   float64
+ 16  f17     1000 non-null   float64
+ 17  f18     1000 non-null   float64
+ 18  f19     1000 non-null   float64
+ 19  f20     1000 non-null   float64
+ 20  f21     1000 non-null   float64
+ 21  f22     1000 non-null   float64
+ 22  f23     1000 non-null   float64
+ 23  f24     1000 non-null   float64
+ 24  f25     1000 non-null   float64
+ 25  f26     1000 non-null   float64
+ 26  f27     1000 non-null   float64
+ 27  f28     1000 non-null   float64
+ 28  f29     1000 non-null   float64
+ 29  f30     1000 non-null   float64
+ 30  f31     1000 non-null   float64
+ 31  f32     1000 non-null   float64
+ 32  f33     1000 non-null   float64
+ 33  f34     1000 non-null   float64
+ 34  f35     1000 non-null   float64
+ 35  f36     1000 non-null   float64
+ 36  f37     1000 non-null   float64
+ 37  f38     1000 non-null   float64
+ 38  f39     1000 non-null   float64
+ 39  f40     1000 non-null   float64
+ 40  f41     1000 non-null   float64
+ 41  f42     1000 non-null   float64
+ 42  f43     1000 non-null   float64
+ 43  f44     1000 non-null   float64
+ 44  f45     1000 non-null   float64
+ 45  f46     1000 non-null   float64
+ 46  f47     1000 non-null   float64
+ 47  f48     1000 non-null   float64
+ 48  f49     1000 non-null   float64
+ 49  f50     1000 non-null   float64
+ 50  f51     1000 non-null   float64
+ 51  f52     1000 non-null   float64
+ 52  f53     1000 non-null   float64
+ 53  f54     1000 non-null   float64
+ 54  f55     1000 non-null   float64
+ 55  f56     1000 non-null   float64
+dtypes: float64(56)
+memory usage: 437.6 KB
+None
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">num_features</span> <span class="o">=</span> <span class="n">X_embed</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;f</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_features</span><span class="p">)]</span>
+<span class="n">embedding_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_embed</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">embedding_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-7fe203dc-78f1-4793-b0d9-b7e705c956f3" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>f1</th>
+      <th>f2</th>
+      <th>f3</th>
+      <th>f4</th>
+      <th>f5</th>
+      <th>f6</th>
+      <th>f7</th>
+      <th>f8</th>
+      <th>f9</th>
+      <th>f10</th>
+      <th>...</th>
+      <th>f47</th>
+      <th>f48</th>
+      <th>f49</th>
+      <th>f50</th>
+      <th>f51</th>
+      <th>f52</th>
+      <th>f53</th>
+      <th>f54</th>
+      <th>f55</th>
+      <th>f56</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.417144</td>
+      <td>-0.041683</td>
+      <td>-0.315551</td>
+      <td>0.446455</td>
+      <td>0.508930</td>
+      <td>-0.686370</td>
+      <td>-0.001454</td>
+      <td>-0.553315</td>
+      <td>-0.753086</td>
+      <td>-0.210338</td>
+      <td>...</td>
+      <td>0.003303</td>
+      <td>0.256114</td>
+      <td>0.165264</td>
+      <td>0.448888</td>
+      <td>-1.067813</td>
+      <td>0.286894</td>
+      <td>-0.252075</td>
+      <td>0.318794</td>
+      <td>-0.268724</td>
+      <td>-0.518900</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-0.137392</td>
+      <td>0.165126</td>
+      <td>-0.100648</td>
+      <td>-0.069360</td>
+      <td>0.200711</td>
+      <td>-0.847127</td>
+      <td>0.336629</td>
+      <td>-0.370019</td>
+      <td>-0.038729</td>
+      <td>-0.208057</td>
+      <td>...</td>
+      <td>-0.290751</td>
+      <td>0.141591</td>
+      <td>-0.095891</td>
+      <td>0.294693</td>
+      <td>-0.571569</td>
+      <td>-0.275432</td>
+      <td>-0.081239</td>
+      <td>0.175270</td>
+      <td>-0.489611</td>
+      <td>-0.272008</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.114640</td>
+      <td>0.055883</td>
+      <td>-0.177440</td>
+      <td>0.095860</td>
+      <td>0.152385</td>
+      <td>-0.693575</td>
+      <td>0.113620</td>
+      <td>-0.349148</td>
+      <td>-0.316113</td>
+      <td>-0.098577</td>
+      <td>...</td>
+      <td>-0.282278</td>
+      <td>0.170123</td>
+      <td>-0.071743</td>
+      <td>0.298444</td>
+      <td>-0.681455</td>
+      <td>-0.042836</td>
+      <td>-0.286440</td>
+      <td>0.208620</td>
+      <td>-0.278755</td>
+      <td>-0.362300</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.683831</td>
+      <td>-0.266939</td>
+      <td>-0.856874</td>
+      <td>0.506953</td>
+      <td>0.864336</td>
+      <td>-0.937824</td>
+      <td>0.344530</td>
+      <td>-0.452965</td>
+      <td>-0.843173</td>
+      <td>-0.578207</td>
+      <td>...</td>
+      <td>0.356841</td>
+      <td>0.113071</td>
+      <td>-0.059922</td>
+      <td>0.958993</td>
+      <td>-0.999742</td>
+      <td>-0.019101</td>
+      <td>-0.343978</td>
+      <td>-0.003225</td>
+      <td>-0.129976</td>
+      <td>-0.519661</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>0.782306</td>
+      <td>-0.206646</td>
+      <td>-0.705584</td>
+      <td>0.614447</td>
+      <td>0.788802</td>
+      <td>-0.862621</td>
+      <td>0.158578</td>
+      <td>-0.544823</td>
+      <td>-1.045305</td>
+      <td>-0.439714</td>
+      <td>...</td>
+      <td>0.375423</td>
+      <td>0.290584</td>
+      <td>0.172655</td>
+      <td>0.892652</td>
+      <td>-1.207033</td>
+      <td>0.193182</td>
+      <td>-0.370929</td>
+      <td>0.147630</td>
+      <td>-0.056323</td>
+      <td>-0.551012</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>-0.130322</td>
+      <td>0.584023</td>
+      <td>0.025805</td>
+      <td>-0.024237</td>
+      <td>0.212774</td>
+      <td>-0.764588</td>
+      <td>0.200262</td>
+      <td>-0.565330</td>
+      <td>-0.387611</td>
+      <td>-0.418711</td>
+      <td>...</td>
+      <td>0.329708</td>
+      <td>0.617355</td>
+      <td>0.327932</td>
+      <td>0.640310</td>
+      <td>-0.534373</td>
+      <td>-0.248987</td>
+      <td>0.117682</td>
+      <td>0.013998</td>
+      <td>-0.175723</td>
+      <td>-0.280828</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>0.713866</td>
+      <td>-0.098278</td>
+      <td>-0.479808</td>
+      <td>0.562241</td>
+      <td>0.622332</td>
+      <td>-0.676903</td>
+      <td>-0.024263</td>
+      <td>-0.576127</td>
+      <td>-1.034340</td>
+      <td>-0.390121</td>
+      <td>...</td>
+      <td>0.391619</td>
+      <td>0.428113</td>
+      <td>0.345405</td>
+      <td>0.762416</td>
+      <td>-1.177234</td>
+      <td>0.324904</td>
+      <td>-0.340540</td>
+      <td>0.295565</td>
+      <td>-0.091730</td>
+      <td>-0.553174</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>0.220254</td>
+      <td>0.108196</td>
+      <td>-0.309945</td>
+      <td>0.231045</td>
+      <td>0.380492</td>
+      <td>-0.718658</td>
+      <td>0.227308</td>
+      <td>-0.402759</td>
+      <td>-0.590636</td>
+      <td>-0.195823</td>
+      <td>...</td>
+      <td>0.066948</td>
+      <td>0.276584</td>
+      <td>0.053513</td>
+      <td>0.507536</td>
+      <td>-0.821637</td>
+      <td>-0.040880</td>
+      <td>-0.158862</td>
+      <td>0.249737</td>
+      <td>-0.214832</td>
+      <td>-0.372810</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>0.721491</td>
+      <td>-0.076559</td>
+      <td>-0.594800</td>
+      <td>0.528792</td>
+      <td>0.730712</td>
+      <td>-0.826336</td>
+      <td>0.115502</td>
+      <td>-0.589980</td>
+      <td>-1.031253</td>
+      <td>-0.529613</td>
+      <td>...</td>
+      <td>0.471617</td>
+      <td>0.418227</td>
+      <td>0.300573</td>
+      <td>0.867433</td>
+      <td>-1.133630</td>
+      <td>0.297610</td>
+      <td>-0.383324</td>
+      <td>0.181151</td>
+      <td>-0.078280</td>
+      <td>-0.579361</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 56 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-7fe203dc-78f1-4793-b0d9-b7e705c956f3')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-7fe203dc-78f1-4793-b0d9-b7e705c956f3 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-7fe203dc-78f1-4793-b0d9-b7e705c956f3');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-7bc578de-c7d2-4aae-a58c-323f6d2ee40a">
+      <button class="colab-df-quickchart" onclick="quickchart('df-7bc578de-c7d2-4aae-a58c-323f6d2ee40a')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-7bc578de-c7d2-4aae-a58c-323f6d2ee40a button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_7aeae6f1-923a-4baf-bc91-4bf5de9825c4">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('embedding_df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_7aeae6f1-923a-4baf-bc91-4bf5de9825c4 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('embedding_df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">embedding_df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1000, 56)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="berita-cleans">
+<h1>BERITA CLEANS<a class="headerlink" href="#berita-cleans" title="Link to this heading">#</a></h1>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">CLEANS ABSTRAK PRODI MANAJEMEN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding">WORD EMBEDDING</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#berita-cleans">BERITA CLEANS</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Arul
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
