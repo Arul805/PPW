@@ -195,6 +195,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="PageRank.html"><strong>PAGE RANK DAN VISUALISASI NYA</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>WEB USAGE</strong></a></li>
+
 </ul>
 
     </div>
@@ -390,16 +391,29 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>WEB USAGE</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-dengan-status-200"><strong>Filter Dengan Status 200</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-berdasarkan-request-method-get"><strong>Mengambil Data Berdasarkan Request Method = GET</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membersihkan-format-waktu-di-kolom-request-time-menjadi-tanggal-dan-waktunya"><strong>Membersihkan Format Waktu di Kolom Request Time menjadi tanggal dan waktunya</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-nasa"><strong>TUGAS NASA</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-nasa"><strong>TUGAS NASA</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-ke-1"><strong>CARA KE-1</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memfilter-request-yang-mengakses-halaman-dengan-ekstensi-html"><strong>Memfilter Request yang Mengakses Halaman dengan Ekstensi .html</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memfilter-log-dengan-status-response-200"><strong>Memfilter Log dengan Status Response 200</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memfilter-request-yang-menggunakan-metode-get"><strong>Memfilter Request yang Menggunakan Metode GET</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-perubahan-di-request-time-menjadi-tanggal-dan-waktunya"><strong>Melakukan perubahan di Request Time menjadi tanggal dan waktunya</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-kolom-pada-session-berdasarkan-host-mengurutkan-berdasarkan-waktu-dan-menyimpan-tabel-final"><strong>Membuat Kolom pada session berdasarkan Host, Mengurutkan Berdasarkan Waktu, dan Menyimpan Tabel Final</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-ke-2"><strong>CARA KE-2</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konversi-url-menjadi-label-huruf"><strong>Konversi URL Menjadi Label Huruf</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembentukan-web-usage-session"><strong>Pembentukan Web Usage Session</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-tabel-web-usage-host-session-timestamp-page"><strong>Membentuk Tabel Web Usage (Host – Session – Timestamp – Page)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-total-sesi-per-host"><strong>Ringkasan Total Sesi Per Host</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membangun-tabel-binary-per-halaman"><strong>MEMBANGUN TABEL BINARY PER HALAMAN</strong></a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -412,6 +426,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="web-usage">
 <h1><strong>WEB USAGE</strong><a class="headerlink" href="#web-usage" title="Link to this heading">#</a></h1>
+<p>##<strong>Filter Data Berdasarkan Ekstensi .html</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -479,7 +494,7 @@ Data asli (head):
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-518c0bb4-5b2a-4165-8e75-31fb59b79e88" class="colab-df-container">
+  <div id="df-5ba1da4e-9e12-4d74-8f42-54beb159a835" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -576,7 +591,7 @@ Data asli (head):
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-518c0bb4-5b2a-4165-8e75-31fb59b79e88')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5ba1da4e-9e12-4d74-8f42-54beb159a835')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -628,12 +643,12 @@ Data asli (head):
 
     <script>
       const buttonEl =
-        document.querySelector('#df-518c0bb4-5b2a-4165-8e75-31fb59b79e88 button.colab-df-convert');
+        document.querySelector('#df-5ba1da4e-9e12-4d74-8f42-54beb159a835 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-518c0bb4-5b2a-4165-8e75-31fb59b79e88');
+        const element = document.querySelector('#df-5ba1da4e-9e12-4d74-8f42-54beb159a835');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -653,8 +668,8 @@ Data asli (head):
   </div>
 
 
-    <div id="df-96780153-dacb-4f4f-ba3f-c5514553119f">
-      <button class="colab-df-quickchart" onclick="quickchart('df-96780153-dacb-4f4f-ba3f-c5514553119f')"
+    <div id="df-c5f56117-6949-4352-9126-cf6222b3d90e">
+      <button class="colab-df-quickchart" onclick="quickchart('df-c5f56117-6949-4352-9126-cf6222b3d90e')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -773,7 +788,7 @@ Data asli (head):
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-96780153-dacb-4f4f-ba3f-c5514553119f button');
+            document.querySelector('#df-c5f56117-6949-4352-9126-cf6222b3d90e button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -788,7 +803,7 @@ Data asli (head):
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-338dad18-d169-4b92-ba3d-544ae34f313b" class="colab-df-container">
+  <div id="df-c51d2aae-0dbe-49da-a617-9f1699568479" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -885,7 +900,7 @@ Data asli (head):
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-338dad18-d169-4b92-ba3d-544ae34f313b')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c51d2aae-0dbe-49da-a617-9f1699568479')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -937,12 +952,12 @@ Data asli (head):
 
     <script>
       const buttonEl =
-        document.querySelector('#df-338dad18-d169-4b92-ba3d-544ae34f313b button.colab-df-convert');
+        document.querySelector('#df-c51d2aae-0dbe-49da-a617-9f1699568479 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-338dad18-d169-4b92-ba3d-544ae34f313b');
+        const element = document.querySelector('#df-c51d2aae-0dbe-49da-a617-9f1699568479');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -962,8 +977,8 @@ Data asli (head):
   </div>
 
 
-    <div id="df-9d5050f1-e887-43f0-8ded-2ce03cfc1b7f">
-      <button class="colab-df-quickchart" onclick="quickchart('df-9d5050f1-e887-43f0-8ded-2ce03cfc1b7f')"
+    <div id="df-8261ab2b-a531-461d-90fe-1ddd4cf6d5f9">
+      <button class="colab-df-quickchart" onclick="quickchart('df-8261ab2b-a531-461d-90fe-1ddd4cf6d5f9')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -1082,7 +1097,7 @@ Data asli (head):
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-9d5050f1-e887-43f0-8ded-2ce03cfc1b7f button');
+            document.querySelector('#df-8261ab2b-a531-461d-90fe-1ddd4cf6d5f9 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1141,7 +1156,7 @@ Pratinjau data yang telah difilter:
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-113f2036-b786-45eb-827d-ae3b113436a1" class="colab-df-container">
+  <div id="df-ae5d7059-6791-44b1-b4b7-62ba281b9803" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1238,7 +1253,7 @@ Pratinjau data yang telah difilter:
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-113f2036-b786-45eb-827d-ae3b113436a1')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ae5d7059-6791-44b1-b4b7-62ba281b9803')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1290,12 +1305,12 @@ Pratinjau data yang telah difilter:
 
     <script>
       const buttonEl =
-        document.querySelector('#df-113f2036-b786-45eb-827d-ae3b113436a1 button.colab-df-convert');
+        document.querySelector('#df-ae5d7059-6791-44b1-b4b7-62ba281b9803 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-113f2036-b786-45eb-827d-ae3b113436a1');
+        const element = document.querySelector('#df-ae5d7059-6791-44b1-b4b7-62ba281b9803');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1315,8 +1330,8 @@ Pratinjau data yang telah difilter:
   </div>
 
 
-    <div id="df-3d87437f-39d5-4ce1-ab22-15d654ca5fcd">
-      <button class="colab-df-quickchart" onclick="quickchart('df-3d87437f-39d5-4ce1-ab22-15d654ca5fcd')"
+    <div id="df-bc181983-2ba0-4015-b5da-8d94bfd11c09">
+      <button class="colab-df-quickchart" onclick="quickchart('df-bc181983-2ba0-4015-b5da-8d94bfd11c09')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -1435,7 +1450,7 @@ Pratinjau data yang telah difilter:
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-3d87437f-39d5-4ce1-ab22-15d654ca5fcd button');
+            document.querySelector('#df-bc181983-2ba0-4015-b5da-8d94bfd11c09 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1489,7 +1504,7 @@ Pratinjau data yang telah difilter:
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-4cc7b548-f31f-4c31-93b8-914d7cf29efa" class="colab-df-container">
+  <div id="df-a534a64c-e9c6-4f35-9674-a539b8787b87" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1586,7 +1601,7 @@ Pratinjau data yang telah difilter:
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-4cc7b548-f31f-4c31-93b8-914d7cf29efa')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a534a64c-e9c6-4f35-9674-a539b8787b87')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1638,12 +1653,12 @@ Pratinjau data yang telah difilter:
 
     <script>
       const buttonEl =
-        document.querySelector('#df-4cc7b548-f31f-4c31-93b8-914d7cf29efa button.colab-df-convert');
+        document.querySelector('#df-a534a64c-e9c6-4f35-9674-a539b8787b87 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-4cc7b548-f31f-4c31-93b8-914d7cf29efa');
+        const element = document.querySelector('#df-a534a64c-e9c6-4f35-9674-a539b8787b87');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1663,8 +1678,8 @@ Pratinjau data yang telah difilter:
   </div>
 
 
-    <div id="df-d532eb9e-bedb-4df9-858c-6756d8aa44fa">
-      <button class="colab-df-quickchart" onclick="quickchart('df-d532eb9e-bedb-4df9-858c-6756d8aa44fa')"
+    <div id="df-216cd0ce-52bd-4905-86b3-137402a174c5">
+      <button class="colab-df-quickchart" onclick="quickchart('df-216cd0ce-52bd-4905-86b3-137402a174c5')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -1783,7 +1798,7 @@ Pratinjau data yang telah difilter:
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-d532eb9e-bedb-4df9-858c-6756d8aa44fa button');
+            document.querySelector('#df-216cd0ce-52bd-4905-86b3-137402a174c5 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1839,7 +1854,7 @@ Pratinjau data yang telah diubah:
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-307ea4af-592f-4171-9b8f-73216c90cbe7" class="colab-df-container">
+  <div id="df-2ab27809-553a-4003-bc66-d244894e298d" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1936,7 +1951,7 @@ Pratinjau data yang telah diubah:
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-307ea4af-592f-4171-9b8f-73216c90cbe7')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-2ab27809-553a-4003-bc66-d244894e298d')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1988,12 +2003,12 @@ Pratinjau data yang telah diubah:
 
     <script>
       const buttonEl =
-        document.querySelector('#df-307ea4af-592f-4171-9b8f-73216c90cbe7 button.colab-df-convert');
+        document.querySelector('#df-2ab27809-553a-4003-bc66-d244894e298d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-307ea4af-592f-4171-9b8f-73216c90cbe7');
+        const element = document.querySelector('#df-2ab27809-553a-4003-bc66-d244894e298d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2013,8 +2028,8 @@ Pratinjau data yang telah diubah:
   </div>
 
 
-    <div id="df-585766a0-7d48-445f-bd86-335353c19146">
-      <button class="colab-df-quickchart" onclick="quickchart('df-585766a0-7d48-445f-bd86-335353c19146')"
+    <div id="df-805e7f53-906b-4ba0-9fc6-f4937b18cbdb">
+      <button class="colab-df-quickchart" onclick="quickchart('df-805e7f53-906b-4ba0-9fc6-f4937b18cbdb')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -2133,7 +2148,7 @@ Pratinjau data yang telah diubah:
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-585766a0-7d48-445f-bd86-335353c19146 button');
+            document.querySelector('#df-805e7f53-906b-4ba0-9fc6-f4937b18cbdb button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -2145,8 +2160,11 @@ Pratinjau data yang telah diubah:
 </div></div>
 </div>
 </section>
-<section id="tugas-nasa">
-<h2><strong>TUGAS NASA</strong><a class="headerlink" href="#tugas-nasa" title="Link to this heading">#</a></h2>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-nasa">
+<h1><strong>TUGAS NASA</strong><a class="headerlink" href="#tugas-nasa" title="Link to this heading">#</a></h1>
+<section id="cara-ke-1">
+<h2><strong>CARA KE-1</strong><a class="headerlink" href="#cara-ke-1" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;data.csv&quot;</span>
@@ -2227,7 +2245,7 @@ memory usage: 158.4+ MB
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-76964ed4-16cb-4d14-acf5-90622c028f5e" class="colab-df-container">
+  <div id="df-8a08c21c-3e78-4d95-8921-0817487e92c1" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2312,7 +2330,7 @@ memory usage: 158.4+ MB
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-76964ed4-16cb-4d14-acf5-90622c028f5e')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-8a08c21c-3e78-4d95-8921-0817487e92c1')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2364,12 +2382,12 @@ memory usage: 158.4+ MB
 
     <script>
       const buttonEl =
-        document.querySelector('#df-76964ed4-16cb-4d14-acf5-90622c028f5e button.colab-df-convert');
+        document.querySelector('#df-8a08c21c-3e78-4d95-8921-0817487e92c1 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-76964ed4-16cb-4d14-acf5-90622c028f5e');
+        const element = document.querySelector('#df-8a08c21c-3e78-4d95-8921-0817487e92c1');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2389,8 +2407,8 @@ memory usage: 158.4+ MB
   </div>
 
 
-    <div id="df-491c954f-3023-4d4a-b251-7d4f3916cb94">
-      <button class="colab-df-quickchart" onclick="quickchart('df-491c954f-3023-4d4a-b251-7d4f3916cb94')"
+    <div id="df-21ffef21-552a-4c45-993f-e882c35e0960">
+      <button class="colab-df-quickchart" onclick="quickchart('df-21ffef21-552a-4c45-993f-e882c35e0960')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -2509,7 +2527,7 @@ memory usage: 158.4+ MB
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-491c954f-3023-4d4a-b251-7d4f3916cb94 button');
+            document.querySelector('#df-21ffef21-552a-4c45-993f-e882c35e0960 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -2523,7 +2541,7 @@ memory usage: 158.4+ MB
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-a514792e-89de-4743-9859-da9df800a23d" class="colab-df-container">
+  <div id="df-37890f89-7fee-4cb3-b19d-dbe1261defa5" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2608,7 +2626,7 @@ memory usage: 158.4+ MB
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a514792e-89de-4743-9859-da9df800a23d')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-37890f89-7fee-4cb3-b19d-dbe1261defa5')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2660,12 +2678,12 @@ memory usage: 158.4+ MB
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a514792e-89de-4743-9859-da9df800a23d button.colab-df-convert');
+        document.querySelector('#df-37890f89-7fee-4cb3-b19d-dbe1261defa5 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a514792e-89de-4743-9859-da9df800a23d');
+        const element = document.querySelector('#df-37890f89-7fee-4cb3-b19d-dbe1261defa5');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2685,8 +2703,8 @@ memory usage: 158.4+ MB
   </div>
 
 
-    <div id="df-d1e6ef6d-df58-4562-9e92-54dd1138c0d2">
-      <button class="colab-df-quickchart" onclick="quickchart('df-d1e6ef6d-df58-4562-9e92-54dd1138c0d2')"
+    <div id="df-1693c293-49d5-462c-afe0-4d53a57200e3">
+      <button class="colab-df-quickchart" onclick="quickchart('df-1693c293-49d5-462c-afe0-4d53a57200e3')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -2805,7 +2823,7 @@ memory usage: 158.4+ MB
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-d1e6ef6d-df58-4562-9e92-54dd1138c0d2 button');
+            document.querySelector('#df-1693c293-49d5-462c-afe0-4d53a57200e3 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -2855,7 +2873,7 @@ Preview data:
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-82864dd4-2ba6-4361-a1d5-995f13f82777" class="colab-df-container">
+  <div id="df-c8b0721b-0927-4f23-859b-a1a7e6cc496e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2940,7 +2958,7 @@ Preview data:
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-82864dd4-2ba6-4361-a1d5-995f13f82777')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c8b0721b-0927-4f23-859b-a1a7e6cc496e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2992,12 +3010,12 @@ Preview data:
 
     <script>
       const buttonEl =
-        document.querySelector('#df-82864dd4-2ba6-4361-a1d5-995f13f82777 button.colab-df-convert');
+        document.querySelector('#df-c8b0721b-0927-4f23-859b-a1a7e6cc496e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-82864dd4-2ba6-4361-a1d5-995f13f82777');
+        const element = document.querySelector('#df-c8b0721b-0927-4f23-859b-a1a7e6cc496e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3017,8 +3035,8 @@ Preview data:
   </div>
 
 
-    <div id="df-f583bce7-c49a-40a4-9289-0ab8ada345b3">
-      <button class="colab-df-quickchart" onclick="quickchart('df-f583bce7-c49a-40a4-9289-0ab8ada345b3')"
+    <div id="df-ad83117d-8a86-4ea5-8278-3dff48b79183">
+      <button class="colab-df-quickchart" onclick="quickchart('df-ad83117d-8a86-4ea5-8278-3dff48b79183')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -3137,7 +3155,7 @@ Preview data:
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-f583bce7-c49a-40a4-9289-0ab8ada345b3 button');
+            document.querySelector('#df-ad83117d-8a86-4ea5-8278-3dff48b79183 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -3196,7 +3214,7 @@ Daftar kolom: [&#39;Unnamed: 0&#39;, &#39;host&#39;, &#39;time&#39;, &#39;method
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-0ca7bc47-4df8-432d-a35b-226c04887346" class="colab-df-container">
+  <div id="df-9e638a7a-b89f-4e95-ad3f-bc359926b17f" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3281,7 +3299,7 @@ Daftar kolom: [&#39;Unnamed: 0&#39;, &#39;host&#39;, &#39;time&#39;, &#39;method
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-0ca7bc47-4df8-432d-a35b-226c04887346')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-9e638a7a-b89f-4e95-ad3f-bc359926b17f')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3333,12 +3351,12 @@ Daftar kolom: [&#39;Unnamed: 0&#39;, &#39;host&#39;, &#39;time&#39;, &#39;method
 
     <script>
       const buttonEl =
-        document.querySelector('#df-0ca7bc47-4df8-432d-a35b-226c04887346 button.colab-df-convert');
+        document.querySelector('#df-9e638a7a-b89f-4e95-ad3f-bc359926b17f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-0ca7bc47-4df8-432d-a35b-226c04887346');
+        const element = document.querySelector('#df-9e638a7a-b89f-4e95-ad3f-bc359926b17f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3358,8 +3376,8 @@ Daftar kolom: [&#39;Unnamed: 0&#39;, &#39;host&#39;, &#39;time&#39;, &#39;method
   </div>
 
 
-    <div id="df-c58770c2-bc8b-4e8b-ba7d-1aa6ae3496a2">
-      <button class="colab-df-quickchart" onclick="quickchart('df-c58770c2-bc8b-4e8b-ba7d-1aa6ae3496a2')"
+    <div id="df-c35f24a2-0146-4220-ac2e-73e64efe1ede">
+      <button class="colab-df-quickchart" onclick="quickchart('df-c35f24a2-0146-4220-ac2e-73e64efe1ede')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -3478,7 +3496,7 @@ Daftar kolom: [&#39;Unnamed: 0&#39;, &#39;host&#39;, &#39;time&#39;, &#39;method
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-c58770c2-bc8b-4e8b-ba7d-1aa6ae3496a2 button');
+            document.querySelector('#df-c35f24a2-0146-4220-ac2e-73e64efe1ede button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -3535,7 +3553,7 @@ Pratinjau data hasil filter:
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-fb1795eb-4590-4731-a955-0b60237527da" class="colab-df-container">
+  <div id="df-e80dc22b-ce1f-4563-b52f-7b023bdc0a63" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3620,7 +3638,7 @@ Pratinjau data hasil filter:
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-fb1795eb-4590-4731-a955-0b60237527da')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e80dc22b-ce1f-4563-b52f-7b023bdc0a63')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3672,12 +3690,12 @@ Pratinjau data hasil filter:
 
     <script>
       const buttonEl =
-        document.querySelector('#df-fb1795eb-4590-4731-a955-0b60237527da button.colab-df-convert');
+        document.querySelector('#df-e80dc22b-ce1f-4563-b52f-7b023bdc0a63 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-fb1795eb-4590-4731-a955-0b60237527da');
+        const element = document.querySelector('#df-e80dc22b-ce1f-4563-b52f-7b023bdc0a63');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3697,8 +3715,8 @@ Pratinjau data hasil filter:
   </div>
 
 
-    <div id="df-b7bbd5e5-4a17-423b-9f90-c25c69e90486">
-      <button class="colab-df-quickchart" onclick="quickchart('df-b7bbd5e5-4a17-423b-9f90-c25c69e90486')"
+    <div id="df-14b09a7f-f972-4843-8733-5bc99c3caf44">
+      <button class="colab-df-quickchart" onclick="quickchart('df-14b09a7f-f972-4843-8733-5bc99c3caf44')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -3817,7 +3835,7 @@ Pratinjau data hasil filter:
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-b7bbd5e5-4a17-423b-9f90-c25c69e90486 button');
+            document.querySelector('#df-14b09a7f-f972-4843-8733-5bc99c3caf44 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -3871,7 +3889,7 @@ Berhasil menyimpan ke time_converted_NASA.csv
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-83ba2687-59cf-44c3-a724-d337f2237f98" class="colab-df-container">
+  <div id="df-46636008-f953-4a00-ba39-184b81a86d3f" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3962,7 +3980,7 @@ Berhasil menyimpan ke time_converted_NASA.csv
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-83ba2687-59cf-44c3-a724-d337f2237f98')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-46636008-f953-4a00-ba39-184b81a86d3f')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -4014,12 +4032,12 @@ Berhasil menyimpan ke time_converted_NASA.csv
 
     <script>
       const buttonEl =
-        document.querySelector('#df-83ba2687-59cf-44c3-a724-d337f2237f98 button.colab-df-convert');
+        document.querySelector('#df-46636008-f953-4a00-ba39-184b81a86d3f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-83ba2687-59cf-44c3-a724-d337f2237f98');
+        const element = document.querySelector('#df-46636008-f953-4a00-ba39-184b81a86d3f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -4039,8 +4057,8 @@ Berhasil menyimpan ke time_converted_NASA.csv
   </div>
 
 
-    <div id="df-23c94aba-f3f1-47ea-a05a-eda82975d0a3">
-      <button class="colab-df-quickchart" onclick="quickchart('df-23c94aba-f3f1-47ea-a05a-eda82975d0a3')"
+    <div id="df-5720505a-6676-4137-bb13-56f4950ae035">
+      <button class="colab-df-quickchart" onclick="quickchart('df-5720505a-6676-4137-bb13-56f4950ae035')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -4159,7 +4177,7 @@ Berhasil menyimpan ke time_converted_NASA.csv
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-23c94aba-f3f1-47ea-a05a-eda82975d0a3 button');
+            document.querySelector('#df-5720505a-6676-4137-bb13-56f4950ae035 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -4221,7 +4239,7 @@ Sukses! File disimpan sebagai session_data_full_NASA.csv
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-b8e454d3-e34d-4911-a5b2-e69eeee225ad" class="colab-df-container">
+  <div id="df-08651914-d57b-4d9a-8713-17585d25bad1" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -4288,7 +4306,7 @@ Sukses! File disimpan sebagai session_data_full_NASA.csv
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b8e454d3-e34d-4911-a5b2-e69eeee225ad')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-08651914-d57b-4d9a-8713-17585d25bad1')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -4340,12 +4358,12 @@ Sukses! File disimpan sebagai session_data_full_NASA.csv
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b8e454d3-e34d-4911-a5b2-e69eeee225ad button.colab-df-convert');
+        document.querySelector('#df-08651914-d57b-4d9a-8713-17585d25bad1 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b8e454d3-e34d-4911-a5b2-e69eeee225ad');
+        const element = document.querySelector('#df-08651914-d57b-4d9a-8713-17585d25bad1');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -4365,8 +4383,8 @@ Sukses! File disimpan sebagai session_data_full_NASA.csv
   </div>
 
 
-    <div id="df-af64ac2d-3eac-4f45-aaa5-865c8b6ad2e3">
-      <button class="colab-df-quickchart" onclick="quickchart('df-af64ac2d-3eac-4f45-aaa5-865c8b6ad2e3')"
+    <div id="df-56e59a8e-e89a-4de4-94af-f103346d07ac">
+      <button class="colab-df-quickchart" onclick="quickchart('df-56e59a8e-e89a-4de4-94af-f103346d07ac')"
                 title="Suggest charts"
                 style="display:none;">
 
@@ -4485,7 +4503,7 @@ Sukses! File disimpan sebagai session_data_full_NASA.csv
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-af64ac2d-3eac-4f45-aaa5-865c8b6ad2e3 button');
+            document.querySelector('#df-56e59a8e-e89a-4de4-94af-f103346d07ac button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -4495,6 +4513,1762 @@ Sukses! File disimpan sebagai session_data_full_NASA.csv
     </div>
   </div>
 </div></div>
+</div>
+</section>
+<section id="cara-ke-2">
+<h2><strong>CARA KE-2</strong><a class="headerlink" href="#cara-ke-2" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Path dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data.csv&quot;</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span> <span class="c1"># Mengoreksi pemisah dari &#39;;&#39; menjadi &#39;,&#39;</span>
+
+<span class="c1"># Convert time</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Timestamp&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">],</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+<span class="c1"># Rename</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;Host&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-2c8ef025-91b9-4c56-aa2f-8dbbb41f3760" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+      <th>Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>***.novo.dk</td>
+      <td>805465029</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200</td>
+      <td>7067</td>
+      <td>1995-07-11 12:17:09</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>805465031</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200</td>
+      <td>5866</td>
+      <td>1995-07-11 12:17:11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>***.novo.dk</td>
+      <td>805465051</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200</td>
+      <td>363</td>
+      <td>1995-07-11 12:17:31</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>***.novo.dk</td>
+      <td>805465053</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200</td>
+      <td>234</td>
+      <td>1995-07-11 12:17:33</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>***.novo.dk</td>
+      <td>805465054</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200</td>
+      <td>786</td>
+      <td>1995-07-11 12:17:34</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-2c8ef025-91b9-4c56-aa2f-8dbbb41f3760')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-2c8ef025-91b9-4c56-aa2f-8dbbb41f3760 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-2c8ef025-91b9-4c56-aa2f-8dbbb41f3760');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-1fbd105c-77a8-48fb-ac07-517f493fad61">
+      <button class="colab-df-quickchart" onclick="quickchart('df-1fbd105c-77a8-48fb-ac07-517f493fad61')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-1fbd105c-77a8-48fb-ac07-517f493fad61 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="konversi-url-menjadi-label-huruf">
+<h2><strong>Konversi URL Menjadi Label Huruf</strong><a class="headerlink" href="#konversi-url-menjadi-label-huruf" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">num_to_letters</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Konversi angka ke huruf: 0→A, 1→B, ..., 25→Z, 26→AA, dst.&quot;&quot;&quot;</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">65</span> <span class="o">+</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">26</span><span class="p">))</span> <span class="o">+</span> <span class="n">result</span>
+        <span class="n">n</span> <span class="o">//=</span> <span class="mi">26</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1"># --- Hasil Langsung ---</span>
+<span class="p">[</span><span class="n">num_to_letters</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;, &#39;G&#39;, &#39;H&#39;, &#39;I&#39;, &#39;J&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="pembentukan-web-usage-session">
+<h2><strong>Pembentukan Web Usage Session</strong><a class="headerlink" href="#pembentukan-web-usage-session" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">num_to_letters</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">string</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">))</span> <span class="o">+</span> <span class="n">string</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">26</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">string</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_web_usage</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Membentuk sesi web usage 20 menit per host.</span>
+<span class="sd">    URL diganti dengan huruf A-Z.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Buat mapping URL → huruf</span>
+    <span class="n">unique_urls</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1"># Corrected &#39;URL&#39; to &#39;url&#39;</span>
+    <span class="n">url_map</span> <span class="o">=</span> <span class="p">{</span><span class="n">url</span><span class="p">:</span> <span class="n">num_to_letters</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_urls</span><span class="p">)}</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;URL_Label&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">url_map</span><span class="p">)</span> <span class="c1"># Corrected &#39;URL&#39; to &#39;url&#39;</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Host&quot;</span><span class="p">,</span> <span class="s2">&quot;Timestamp&quot;</span><span class="p">])</span>
+
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">host</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Host&quot;</span><span class="p">):</span>
+        <span class="n">group</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Timestamp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">sessions</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">cur_session</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">prev_time</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">group</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+            <span class="n">ts</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;Timestamp&quot;</span><span class="p">]</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;URL_Label&quot;</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">prev_time</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">cur_session</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ts</span><span class="p">,</span> <span class="n">label</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">delta</span> <span class="o">=</span> <span class="p">(</span><span class="n">ts</span> <span class="o">-</span> <span class="n">prev_time</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="o">/</span> <span class="mi">60</span>
+
+                <span class="c1"># aturan sesi 20 menit</span>
+                <span class="k">if</span> <span class="n">delta</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+                    <span class="n">sessions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cur_session</span><span class="p">)</span>
+                    <span class="n">cur_session</span> <span class="o">=</span> <span class="p">[(</span><span class="n">ts</span><span class="p">,</span> <span class="n">label</span><span class="p">)]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">cur_session</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ts</span><span class="p">,</span> <span class="n">label</span><span class="p">))</span>
+
+            <span class="n">prev_time</span> <span class="o">=</span> <span class="n">ts</span>
+
+        <span class="k">if</span> <span class="n">cur_session</span><span class="p">:</span>
+            <span class="n">sessions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cur_session</span><span class="p">)</span>
+
+        <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s2">&quot;Host&quot;</span><span class="p">:</span> <span class="n">host</span><span class="p">,</span>
+            <span class="s2">&quot;Sessions&quot;</span><span class="p">:</span> <span class="n">sessions</span>
+        <span class="p">})</span>
+
+    <span class="k">return</span> <span class="n">results</span><span class="p">,</span> <span class="n">url_map</span>
+
+
+<span class="c1"># --- Hasil Langsung ---</span>
+<span class="n">results</span><span class="p">,</span> <span class="n">url_map</span> <span class="o">=</span> <span class="n">process_web_usage</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">results</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>   <span class="c1"># tampilkan contoh 1 host pertama</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Host&#39;: &#39;***.novo.dk&#39;,
+  &#39;Sessions&#39;: [[(Timestamp(&#39;1995-07-11 12:17:09&#39;), &#39;A&#39;),
+    (Timestamp(&#39;1995-07-11 12:17:11&#39;), &#39;B&#39;),
+    (Timestamp(&#39;1995-07-11 12:17:31&#39;), &#39;C&#39;),
+    (Timestamp(&#39;1995-07-11 12:17:33&#39;), &#39;D&#39;),
+    (Timestamp(&#39;1995-07-11 12:17:34&#39;), &#39;E&#39;),
+    (Timestamp(&#39;1995-07-11 12:17:38&#39;), &#39;F&#39;),
+    (Timestamp(&#39;1995-07-11 12:17:48&#39;), &#39;G&#39;),
+    (Timestamp(&#39;1995-07-11 12:17:51&#39;), &#39;H&#39;),
+    (Timestamp(&#39;1995-07-11 12:19:13&#39;), &#39;I&#39;),
+    (Timestamp(&#39;1995-07-11 12:19:17&#39;), &#39;E&#39;),
+    (Timestamp(&#39;1995-07-11 12:22:03&#39;), &#39;J&#39;),
+    (Timestamp(&#39;1995-07-11 12:22:08&#39;), &#39;K&#39;),
+    (Timestamp(&#39;1995-07-11 12:23:01&#39;), &#39;L&#39;)],
+   [(Timestamp(&#39;1995-08-09 07:02:48&#39;), &#39;M&#39;),
+    (Timestamp(&#39;1995-08-09 07:02:55&#39;), &#39;N&#39;),
+    (Timestamp(&#39;1995-08-09 07:03:02&#39;), &#39;I&#39;),
+    (Timestamp(&#39;1995-08-09 07:03:06&#39;), &#39;J&#39;),
+    (Timestamp(&#39;1995-08-09 07:03:12&#39;), &#39;K&#39;),
+    (Timestamp(&#39;1995-08-09 07:03:52&#39;), &#39;O&#39;),
+    (Timestamp(&#39;1995-08-09 07:04:08&#39;), &#39;P&#39;),
+    (Timestamp(&#39;1995-08-09 07:04:24&#39;), &#39;E&#39;),
+    (Timestamp(&#39;1995-08-09 07:05:07&#39;), &#39;Q&#39;),
+    (Timestamp(&#39;1995-08-09 07:05:14&#39;), &#39;R&#39;),
+    (Timestamp(&#39;1995-08-09 07:05:38&#39;), &#39;S&#39;),
+    (Timestamp(&#39;1995-08-09 07:06:21&#39;), &#39;T&#39;),
+    (Timestamp(&#39;1995-08-09 07:07:24&#39;), &#39;U&#39;),
+    (Timestamp(&#39;1995-08-09 07:07:40&#39;), &#39;V&#39;),
+    (Timestamp(&#39;1995-08-09 07:07:58&#39;), &#39;W&#39;),
+    (Timestamp(&#39;1995-08-09 07:08:22&#39;), &#39;X&#39;)]]}]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="membentuk-tabel-web-usage-host-session-timestamp-page">
+<h2><strong>Membentuk Tabel Web Usage (Host – Session – Timestamp – Page)</strong><a class="headerlink" href="#membentuk-tabel-web-usage-host-session-timestamp-page" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url_mapping_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span>
+    <span class="p">{</span><span class="s2">&quot;URL&quot;</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="s2">&quot;Label&quot;</span><span class="p">:</span> <span class="n">label</span><span class="p">}</span>
+    <span class="k">for</span> <span class="n">url</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">url_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">])</span>
+
+<span class="n">url_mapping_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-9e0609e0-17ab-4909-a3a8-70dc878c0cbf" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>URL</th>
+      <th>Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>/ksc.html</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>/images/USA-logosmall.gif</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>360</th>
+      <td>/finance/book.gif</td>
+      <td>MW</td>
+    </tr>
+    <tr>
+      <th>361</th>
+      <td>/finance/tour.gif</td>
+      <td>MX</td>
+    </tr>
+    <tr>
+      <th>362</th>
+      <td>/finance/brrow_1t.gif</td>
+      <td>MY</td>
+    </tr>
+    <tr>
+      <th>363</th>
+      <td>/shuttle/missions/sts-71/images/KSC-95EC-0423.jpg</td>
+      <td>MZ</td>
+    </tr>
+    <tr>
+      <th>364</th>
+      <td>/software/winvn/faq/WINVNFAQ-Contents.html</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+<p>365 rows × 2 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-9e0609e0-17ab-4909-a3a8-70dc878c0cbf')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-9e0609e0-17ab-4909-a3a8-70dc878c0cbf button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-9e0609e0-17ab-4909-a3a8-70dc878c0cbf');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-0b6efbc1-93e8-444e-8b37-8d3e80f1fe82">
+      <button class="colab-df-quickchart" onclick="quickchart('df-0b6efbc1-93e8-444e-8b37-8d3e80f1fe82')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-0b6efbc1-93e8-444e-8b37-8d3e80f1fe82 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_ed74733b-7951-4742-8363-214e92735556">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('url_mapping_df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_ed74733b-7951-4742-8363-214e92735556 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('url_mapping_df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="ringkasan-total-sesi-per-host">
+<h2><strong>Ringkasan Total Sesi Per Host</strong><a class="headerlink" href="#ringkasan-total-sesi-per-host" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">table_rows</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">host</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;Host&quot;</span><span class="p">]</span>
+    <span class="n">sessions</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;Sessions&quot;</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">session_idx</span><span class="p">,</span> <span class="n">session</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sessions</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">ts</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">session</span><span class="p">:</span>
+            <span class="n">table_rows</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s2">&quot;Host&quot;</span><span class="p">:</span> <span class="n">host</span><span class="p">,</span>
+                <span class="s2">&quot;Session&quot;</span><span class="p">:</span> <span class="n">session_idx</span><span class="p">,</span>
+                <span class="s2">&quot;Timestamp&quot;</span><span class="p">:</span> <span class="n">ts</span><span class="p">,</span>
+                <span class="s2">&quot;Page&quot;</span><span class="p">:</span> <span class="n">label</span>
+            <span class="p">})</span>
+
+<span class="n">usage_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">table_rows</span><span class="p">)</span>
+
+<span class="n">usage_table</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-b3568622-06b4-436d-96fa-60a99bc18b17" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Host</th>
+      <th>Session</th>
+      <th>Timestamp</th>
+      <th>Page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>1995-07-11 12:17:09</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>1995-07-11 12:17:11</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>1995-07-11 12:17:31</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>1995-07-11 12:17:33</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>1995-07-11 12:17:34</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2965556</th>
+      <td>zzzzzzzz.mindspring.com</td>
+      <td>1</td>
+      <td>1995-08-27 21:52:53</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <th>2965557</th>
+      <td>zzzzzzzz.mindspring.com</td>
+      <td>1</td>
+      <td>1995-08-27 21:52:55</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <th>2965558</th>
+      <td>zzzzzzzz.mindspring.com</td>
+      <td>1</td>
+      <td>1995-08-27 21:53:11</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <th>2965559</th>
+      <td>zzzzzzzz.mindspring.com</td>
+      <td>1</td>
+      <td>1995-08-27 21:53:11</td>
+      <td>J</td>
+    </tr>
+    <tr>
+      <th>2965560</th>
+      <td>zzzzzzzz.mindspring.com</td>
+      <td>1</td>
+      <td>1995-08-27 21:53:12</td>
+      <td>K</td>
+    </tr>
+  </tbody>
+</table>
+<p>2965561 rows × 4 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b3568622-06b4-436d-96fa-60a99bc18b17')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-b3568622-06b4-436d-96fa-60a99bc18b17 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-b3568622-06b4-436d-96fa-60a99bc18b17');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-3be8c7b6-62b1-406a-b263-a0ed4633d855">
+      <button class="colab-df-quickchart" onclick="quickchart('df-3be8c7b6-62b1-406a-b263-a0ed4633d855')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-3be8c7b6-62b1-406a-b263-a0ed4633d855 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_4d54cda3-22bf-40e4-8674-e379a014f0b0">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('usage_table')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_4d54cda3-22bf-40e4-8674-e379a014f0b0 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('usage_table');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session_summary</span> <span class="o">=</span> <span class="n">usage_table</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Host&quot;</span><span class="p">)[</span><span class="s2">&quot;Session&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">session_summary</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Session&quot;</span><span class="p">:</span> <span class="s2">&quot;Total Sessions&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">session_summary</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-6b1af4d7-1bf8-4d74-9a2d-8caa33a817d1" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Host</th>
+      <th>Total Sessions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>001.msy4.communique.net</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>007.thegap.com</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>01.ts01.zircon.net.au</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>135263</th>
+      <td>zzsmiffs.slip.cc.uq.oz.au</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>135264</th>
+      <td>zztduffy.slip.cc.uq.oz.au</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>135265</th>
+      <td>zzyzx.demon.co.uk</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>135266</th>
+      <td>zzz.pe.u-tokyo.ac.jp</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>135267</th>
+      <td>zzzzzzzz.mindspring.com</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>135268 rows × 2 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6b1af4d7-1bf8-4d74-9a2d-8caa33a817d1')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-6b1af4d7-1bf8-4d74-9a2d-8caa33a817d1 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-6b1af4d7-1bf8-4d74-9a2d-8caa33a817d1');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-f7ba92e1-735f-4c6b-bc02-af86b1d11a86">
+      <button class="colab-df-quickchart" onclick="quickchart('df-f7ba92e1-735f-4c6b-bc02-af86b1d11a86')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-f7ba92e1-735f-4c6b-bc02-af86b1d11a86 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_08209085-53a9-4ec9-aa14-707f996c867c">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('session_summary')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_08209085-53a9-4ec9-aa14-707f996c867c button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('session_summary');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="membangun-tabel-binary-per-halaman">
+<h2><strong>MEMBANGUN TABEL BINARY PER HALAMAN</strong><a class="headerlink" href="#membangun-tabel-binary-per-halaman" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5. MEMBANGUN TABEL BINARY PER HALAMAN (A=1, lainnya=0)</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span> <span class="c1"># Import pandas for DataFrame operations</span>
+
+<span class="c1"># --- Start code to ensure &#39;df&#39; is available ---</span>
+<span class="c1"># Path dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data.csv&quot;</span>
+
+<span class="c1"># Load df and preprocess (copied from cell 0Z9oSXRTOQHd)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="c1"># Convert time</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Timestamp&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">],</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+<span class="c1"># Rename</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;Host&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># --- End code to ensure &#39;df&#39; is available ---</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">num_to_letters</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">string</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">))</span> <span class="o">+</span> <span class="n">string</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">26</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">string</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_web_usage</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Membentuk sesi web usage 20 menit per host.</span>
+<span class="sd">    URL diganti dengan huruf A-Z.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Buat mapping URL → huruf</span>
+    <span class="n">unique_urls</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+    <span class="n">url_map</span> <span class="o">=</span> <span class="p">{</span><span class="n">url</span><span class="p">:</span> <span class="n">num_to_letters</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_urls</span><span class="p">)}</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;URL_Label&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">url_map</span><span class="p">)</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Host&quot;</span><span class="p">,</span> <span class="s2">&quot;Timestamp&quot;</span><span class="p">])</span>
+
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">host</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Host&quot;</span><span class="p">):</span>
+        <span class="n">group</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Timestamp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">sessions</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">cur_session</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">prev_time</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">group</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+            <span class="n">ts</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;Timestamp&quot;</span><span class="p">]</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;URL_Label&quot;</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">prev_time</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">cur_session</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ts</span><span class="p">,</span> <span class="n">label</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">delta</span> <span class="o">=</span> <span class="p">(</span><span class="n">ts</span> <span class="o">-</span> <span class="n">prev_time</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="o">/</span> <span class="mi">60</span>
+
+                <span class="c1"># aturan sesi 20 menit</span>
+                <span class="k">if</span> <span class="n">delta</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+                    <span class="n">sessions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cur_session</span><span class="p">)</span>
+                    <span class="n">cur_session</span> <span class="o">=</span> <span class="p">[(</span><span class="n">ts</span><span class="p">,</span> <span class="n">label</span><span class="p">)]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">cur_session</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ts</span><span class="p">,</span> <span class="n">label</span><span class="p">))</span>
+
+            <span class="n">prev_time</span> <span class="o">=</span> <span class="n">ts</span>
+
+        <span class="k">if</span> <span class="n">cur_session</span><span class="p">:</span>
+            <span class="n">sessions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cur_session</span><span class="p">)</span>
+
+        <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s2">&quot;Host&quot;</span><span class="p">:</span> <span class="n">host</span><span class="p">,</span>
+            <span class="s2">&quot;Sessions&quot;</span><span class="p">:</span> <span class="n">sessions</span>
+        <span class="p">})</span>
+
+    <span class="k">return</span> <span class="n">results</span><span class="p">,</span> <span class="n">url_map</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">build_binary_table</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">url_map</span><span class="p">):</span>
+    <span class="n">all_labels</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">url_map</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>  <span class="c1"># A, B, C, ...</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">host_data</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+        <span class="n">host</span> <span class="o">=</span> <span class="n">host_data</span><span class="p">[</span><span class="s2">&quot;Host&quot;</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">session</span> <span class="ow">in</span> <span class="n">host_data</span><span class="p">[</span><span class="s2">&quot;Sessions&quot;</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">ts</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">session</span><span class="p">:</span>
+
+                <span class="c1"># buat baris kosong (semua 0)</span>
+                <span class="n">row</span> <span class="o">=</span> <span class="p">{</span><span class="n">l</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">all_labels</span><span class="p">}</span>
+
+                <span class="c1"># halaman yang dikunjungi = 1</span>
+                <span class="n">row</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+                <span class="c1"># tambahkan kolom lain</span>
+                <span class="n">row</span><span class="p">[</span><span class="s2">&quot;Time&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
+                <span class="n">row</span><span class="p">[</span><span class="s2">&quot;Host&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">host</span>
+
+                <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rows</span><span class="p">)</span>
+
+<span class="c1"># Ensure &#39;results&#39; and &#39;url_map&#39; are defined. If not, re-generate from &#39;df&#39;.</span>
+<span class="c1"># Note: &#39;df&#39; is now guaranteed to be available from the code above.</span>
+<span class="k">if</span> <span class="s1">&#39;results&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">()</span> <span class="ow">or</span> <span class="s1">&#39;url_map&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Warning: &#39;results&#39; or &#39;url_map&#39; not found. Attempting to re-generate from &#39;df&#39;...&quot;</span><span class="p">)</span>
+    <span class="c1"># &#39;process_web_usage&#39; and &#39;num_to_letters&#39; are now defined in this cell</span>
+    <span class="n">results</span><span class="p">,</span> <span class="n">url_map</span> <span class="o">=</span> <span class="n">process_web_usage</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="n">binary_table</span> <span class="o">=</span> <span class="n">build_binary_table</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">url_map</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Tabel Binary Halaman Dikunjungi ===&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">binary_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+
+<span class="c1"># Simpan CSV bila diperlukan</span>
+<span class="n">binary_table</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;binary_web_usage.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning: &#39;results&#39; or &#39;url_map&#39; not found. Attempting to re-generate from &#39;df&#39;...
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">openpyxl</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workbook</span>
+
+<span class="c1"># Buat workbook baru</span>
+<span class="n">wb</span> <span class="o">=</span> <span class="n">Workbook</span><span class="p">()</span>
+
+<span class="c1"># ----------------------------</span>
+<span class="c1"># Sheet 1: URL Mapping</span>
+<span class="c1"># ----------------------------</span>
+<span class="n">ws1</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">active</span>
+<span class="n">ws1</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;URL Mapping&quot;</span>
+
+<span class="c1"># Header</span>
+<span class="n">ws1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">url_mapping_df</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+
+<span class="c1"># Isi data</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">url_mapping_df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">ws1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
+
+<span class="c1"># ----------------------------</span>
+<span class="c1"># Sheet 2: Web Usage Sessions</span>
+<span class="c1"># ----------------------------</span>
+<span class="n">ws2</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s2">&quot;Web Usage Sessions&quot;</span><span class="p">)</span>
+
+<span class="n">ws2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">usage_table</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">usage_table</span><span class="o">.</span><span class="n">itertuples</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">ws2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
+
+<span class="c1"># ----------------------------</span>
+<span class="c1"># Sheet 3: Session Summary</span>
+<span class="c1"># ----------------------------</span>
+<span class="n">ws3</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s2">&quot;Session Summary&quot;</span><span class="p">)</span>
+
+<span class="n">ws3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">session_summary</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">session_summary</span><span class="o">.</span><span class="n">itertuples</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">ws3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
+
+<span class="c1"># ----------------------------</span>
+<span class="c1"># Save file</span>
+<span class="c1"># ----------------------------</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="s2">&quot;/content/web_usage_complete.xlsx&quot;</span>
+<span class="n">wb</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✔ File Excel lengkap berhasil dibuat:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -4554,16 +6328,29 @@ Sukses! File disimpan sebagai session_data_full_NASA.csv
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>WEB USAGE</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-dengan-status-200"><strong>Filter Dengan Status 200</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-berdasarkan-request-method-get"><strong>Mengambil Data Berdasarkan Request Method = GET</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membersihkan-format-waktu-di-kolom-request-time-menjadi-tanggal-dan-waktunya"><strong>Membersihkan Format Waktu di Kolom Request Time menjadi tanggal dan waktunya</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-nasa"><strong>TUGAS NASA</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-nasa"><strong>TUGAS NASA</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-ke-1"><strong>CARA KE-1</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memfilter-request-yang-mengakses-halaman-dengan-ekstensi-html"><strong>Memfilter Request yang Mengakses Halaman dengan Ekstensi .html</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memfilter-log-dengan-status-response-200"><strong>Memfilter Log dengan Status Response 200</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memfilter-request-yang-menggunakan-metode-get"><strong>Memfilter Request yang Menggunakan Metode GET</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-perubahan-di-request-time-menjadi-tanggal-dan-waktunya"><strong>Melakukan perubahan di Request Time menjadi tanggal dan waktunya</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-kolom-pada-session-berdasarkan-host-mengurutkan-berdasarkan-waktu-dan-menyimpan-tabel-final"><strong>Membuat Kolom pada session berdasarkan Host, Mengurutkan Berdasarkan Waktu, dan Menyimpan Tabel Final</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-ke-2"><strong>CARA KE-2</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konversi-url-menjadi-label-huruf"><strong>Konversi URL Menjadi Label Huruf</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembentukan-web-usage-session"><strong>Pembentukan Web Usage Session</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-tabel-web-usage-host-session-timestamp-page"><strong>Membentuk Tabel Web Usage (Host – Session – Timestamp – Page)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-total-sesi-per-host"><strong>Ringkasan Total Sesi Per Host</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membangun-tabel-binary-per-halaman"><strong>MEMBANGUN TABEL BINARY PER HALAMAN</strong></a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
