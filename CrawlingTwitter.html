@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; PPW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Crawling data use tweet-harvest &#8212; PPW</title>
   
   
   
@@ -56,9 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CrawlingTwitter';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Komunitas Graph FB" href="FB.html" />
+    <link rel="prev" title="WEB USAGE" href="Webusage.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -121,8 +124,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -178,7 +179,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tugas.html">Pengantar Pencarian &amp; Penambangan Web</a></li>
 <li class="toctree-l1"><a class="reference internal" href="crawling_PPW.html">Crawling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="crawling_ptadanberita.html">Crawling PTA , Berita, dan Link</a></li>
@@ -196,7 +197,7 @@
 <li class="toctree-l1"><a class="reference internal" href="PageRank.html"><strong>PAGE RANK DAN VISUALISASI NYA</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Webusage.html"><strong>WEB USAGE</strong></a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="CrawlingTwitter.html">Crawling data use tweet-harvest</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling data use tweet-harvest</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FB.html">Komunitas Graph FB</a></li>
 </ul>
 
@@ -269,7 +270,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FCrawlingTwitter.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,6 +282,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/CrawlingTwitter.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -333,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Crawling data use tweet-harvest</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -347,13 +396,154 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+  <section id="crawling-data-use-tweet-harvest">
+<h1>Crawling data use tweet-harvest<a class="headerlink" href="#crawling-data-use-tweet-harvest" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install dependencies system untuk Playwright</span>
+<span class="err">!</span><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="err">!</span><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> \
+    <span class="n">libatk1</span><span class="mf">.0</span><span class="o">-</span><span class="mi">0</span> \
+    <span class="n">libatk</span><span class="o">-</span><span class="n">bridge2</span><span class="mf">.0</span><span class="o">-</span><span class="mi">0</span> \
+    <span class="n">libcups2</span> \
+    <span class="n">libxkbcommon0</span> \
+    <span class="n">libxcomposite1</span> \
+    <span class="n">libxdamage1</span> \
+    <span class="n">libxrandr2</span> \
+    <span class="n">libgbm1</span> \
+    <span class="n">libpango</span><span class="o">-</span><span class="mf">1.0</span><span class="o">-</span><span class="mi">0</span> \
+    <span class="n">libcairo2</span> \
+    <span class="n">libasound2</span> \
+    <span class="n">libnss3</span> \
+    <span class="n">libnspr4</span>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+<span class="c1"># Install Playwright browser</span>
+<span class="err">!</span><span class="n">playwright</span> <span class="n">install</span> <span class="n">chromium</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Working]
+            
+Hit:1 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  InRelease
+Hit:2 https://cloud.r-project.org/bin/linux/ubuntu jammy-cran40/ InRelease
+Hit:3 https://cli.github.com/packages stable InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:5 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:7 https://r2u.stat.illinois.edu/ubuntu jammy InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:9 https://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu jammy InRelease
+Hit:10 https://ppa.launchpadcontent.net/graphics-drivers/ppa/ubuntu jammy InRelease
+Hit:11 https://ppa.launchpadcontent.net/ubuntugis/ppa/ubuntu jammy InRelease
+Reading package lists... Done
+W: Skipping acquire of configured file &#39;main/source/Sources&#39; as repository &#39;https://r2u.stat.illinois.edu/ubuntu jammy InRelease&#39; does not seem to provide it (sources.list entry misspelt?)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+libasound2 is already the newest version (1.2.6.1-1ubuntu1).
+libatk-bridge2.0-0 is already the newest version (2.38.0-3).
+libatk1.0-0 is already the newest version (2.36.0-3build1).
+libcairo2 is already the newest version (1.16.0-5ubuntu2).
+libxcomposite1 is already the newest version (1:0.4.5-1build2).
+libxdamage1 is already the newest version (1:1.1.5-2build2).
+libxkbcommon0 is already the newest version (1.4.0-1).
+libxrandr2 is already the newest version (2:1.5.2-1build1).
+libcups2 is already the newest version (2.4.1op1-1ubuntu4.15).
+libcups2 set to manually installed.
+libgbm1 is already the newest version (23.2.1-1ubuntu3.1~22.04.3).
+libnspr4 is already the newest version (2:4.35-0ubuntu0.22.04.1).
+libnss3 is already the newest version (2:3.98-0ubuntu0.22.04.2).
+libpango-1.0-0 is already the newest version (1.50.6+ds-2ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 61 not upgraded.
+/bin/bash: line 1: playwright: command not found
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sekarang jalankan tweet-harvest</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;crawlingTwitIjasahPalsu.csv&quot;</span>
+<span class="n">search_keyword</span> <span class="o">=</span> <span class="s1">&#39;freepalestine since:2021-01-01 until:2023-12-12 lang:id&#39;</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="mi">2000</span>
 
+<span class="c1"># Ganti dengan token Anda yang valid</span>
+<span class="n">twitter_auth_token</span> <span class="o">=</span> <span class="s2">&quot;c6264ccf1945d57a7d01ebe881b3a1e60181c2ed&quot;</span>
+
+<span class="err">!</span><span class="n">npx</span> <span class="o">-</span><span class="n">y</span> <span class="n">tweet</span><span class="o">-</span><span class="n">harvest</span><span class="o">@</span><span class="mf">2.6.1</span> <span class="o">-</span><span class="n">o</span> <span class="s2">&quot;</span><span class="si">{filename}</span><span class="s2">&quot;</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;</span><span class="si">{search_keyword}</span><span class="s2">&quot;</span> <span class="o">--</span><span class="n">tab</span> <span class="s2">&quot;LATEST&quot;</span> <span class="o">-</span><span class="n">l</span> <span class="p">{</span><span class="n">limit</span><span class="p">}</span> <span class="o">--</span><span class="n">token</span> <span class="p">{</span><span class="n">twitter_auth_token</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>⠙⠹⠸⠼⠴⠦⠧⠇⠏⠋⠙⠹<span class=" -Color -Color-Bold -Color-Bold-Green">Tweet Harvest [v2.6.1]</span>
+
+<span class=" -Color -Color-Blue">Research by </span><span class=" -Color -Color-Bold -Color-Bold-Blue">Helmi Satria</span>
+<span class=" -Color -Color-Blue">Use it for Educational Purposes only!</span>
+
+<span class=" -Color -Color-Yellow">This script uses Chromium Browser to crawl data from Twitter with </span><span class=" -Color -Color-Bold -Color-Bold-Yellow">your Twitter auth token</span><span class=" -Color -Color-Yellow">.</span>
+<span class=" -Color -Color-Yellow">Please enter your Twitter auth token when prompted.</span>
+
+<span class=" -Color -Color-Bold -Color-Bold-Red">Note:</span> Keep your access token secret! Don&#39;t share it with anyone else.
+<span class=" -Color -Color-Bold -Color-Bold-Red">Note:</span> This script only runs on your local device.
+
+
+<span class=" -Color -Color-Blue">Opening twitter search page...</span>
+
+
+-- Scrolling... (1) (2) (3)
+<span class=" -Color -Color-Yellow">Filling in keywords: freepalestine since:2021-01-01 until:2023-12-12 lang:id</span>
+
+ (4)[v2.6.1] Error parsing response json: {&quot;_type&quot;:&quot;Response&quot;,&quot;_guid&quot;:&quot;response@5f7a51193e545696ed55799d544d61cc&quot;}
+[v2.6.1] Most likely, you have already exceeded the Twitter rate limit. Read more on https://x.com/elonmusk/status/1675187969420828672.
+[v2.6.1] Error parsing response json: {&quot;_type&quot;:&quot;Response&quot;,&quot;_guid&quot;:&quot;response@1b93fbdf809578c3506dc4ee8df6ba99&quot;}
+[v2.6.1] Most likely, you have already exceeded the Twitter rate limit. Read more on https://x.com/elonmusk/status/1675187969420828672.
+[v2.6.1] No more tweets found, please check your search criteria and csv file result
+
+-- Scrolling... (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15)[v2.6.1] Error: page.waitForResponse: Target page, context or browser has been closed
+<span class=" -Color -Color-Blue">Keywords: freepalestine since:2021-01-01 until:2023-12-12 lang:id</span>
+Twitter Harvest v 2.6.1
+node:internal/process/promises:391
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.screenshot: Target page, context or browser has been closed
+    at crawl (/root/.npm/_npx/d28e8c2154917da4/node_modules/tweet-harvest/dist/bin.js:470:16)
+
+Node.js v20.19.0
+^C
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">c6264ccf1945d57a7d01ebe881b3a1e60181c2ed</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -365,6 +555,24 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Webusage.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>WEB USAGE</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="FB.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Komunitas Graph FB</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
